@@ -1,21 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KSR INTERNATIONAL TRADE MANUFACTURING | Spice Manufacturer & Exporter India</title>
-  <meta name="description" content="Premier Indian spice manufacturing, processing and export company based in Ambad, Jalna, Maharashtra. Supplying Turmeric, Chilli, Cumin, Coriander and spice blends worldwide.">
+  <title>KSR International Trade Manufacturing | Indian Spice Manufacturer & Bulk Exporter</title>
+  <meta name="description" content="Leading Indian spice manufacturing, processing, and bulk export company based in Ambad, Jalna, Maharashtra. Supplying Turmeric, Red Chilli, Cumin, Coriander and customized spice blends globally.">
+  <link rel="icon" type="image/png" href="KSR%20MFG%20LOGO.png">
   
-  <!-- Favicon / Brand meta -->
-  <link rel="icon" type="image/jpeg" href="KSR MFG  LOGO_2.jpg">
-  
-  <!-- Google Fonts & Tailwind CSS CDN -->
+  <!-- Google Fonts & Tailwind CDN -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Cinzel:wght@600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
-  
-  <!-- FontAwesome Icons for International B2B UI -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <script>
@@ -23,15 +19,17 @@
       theme: {
         extend: {
           colors: {
-            brandSky: '#00A6E8',
-            brandGold: '#D4AF37',
-            brandNavy: '#071B33',
-            brandBg: '#F5F8FA'
+            brand: {
+              blue: '#00A6E8',
+              gold: '#D4AF37',
+              navy: '#071B33',
+              darker: '#041021',
+              light: '#F5F8FA'
+            }
           },
           fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-            serif: ['Playfair Display', 'serif'],
-            cinzel: ['Cinzel', 'serif']
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Cinzel"', 'serif']
           }
         }
       }
@@ -39,1802 +37,481 @@
   </script>
 
   <style>
-    /* Smooth Scrolling & Custom Luxury Accents */
-    html { scroll-behavior: smooth; }
     .gold-gradient-text {
-      background: linear-gradient(135deg, #FFE29F 0%, #D4AF37 50%, #997819 100%);
+      background: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 50%, #AA771C 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-    .sky-gradient-text {
-      background: linear-gradient(135deg, #00A6E8 0%, #70d6ff 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    .gold-border {
+      border: 1px solid rgba(212, 175, 55, 0.35);
     }
-    .custom-scrollbar::-webkit-scrollbar { width: 6px; }
-    .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
-    .page-section { display: none; }
-    .page-section.active { display: block; animation: fadeIn 0.35s ease-in-out; }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(6px); }
-      to { opacity: 1; transform: translateY(0); }
+    .gold-glow:hover {
+      box-shadow: 0 0 25px rgba(212, 175, 55, 0.25);
     }
   </style>
 </head>
-<body class="bg-[#F5F8FA] text-[#071B33] font-sans antialiased flex flex-col min-h-screen selection:bg-[#00A6E8] selection:text-white">
+<body class="bg-[#F5F8FA] text-slate-800 font-sans antialiased selection:bg-[#D4AF37] selection:text-[#071B33]">
 
-  <!-- TOP CREDIBILITY / CONTACT STRIP -->
-  <div class="bg-[#071B33] text-xs text-slate-300 border-b border-white/10 py-2.5 px-4 sm:px-8 z-30">
-    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-      <div class="flex items-center gap-3 sm:gap-4 flex-wrap justify-center sm:justify-start">
-        <span class="flex items-center gap-1.5 text-slate-200">
-          <i class="fa-solid fa-location-dot text-[#00A6E8]"></i>
-          <span id="top-bar-location">Ambad, Jalna, Maharashtra, India</span>
+  <!-- Top Announcement / Logistics Bar -->
+  <div class="bg-[#041021] text-xs text-slate-300 border-b border-slate-800 py-2 px-4">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center gap-4">
+        <span class="flex items-center gap-1.5 text-[#00A6E8] font-medium">
+          <i class="fa-solid fa-anchor"></i> Origin Port: JNPT / Nhava Sheva (Mumbai)
         </span>
         <span class="hidden md:inline text-slate-600">|</span>
-        <span class="flex items-center gap-1.5 text-slate-200">
-          <i class="fa-solid fa-award text-[#D4AF37]"></i>
-          <span id="top-bar-exp">7+ Years Export-Import Industry Experience</span>
-        </span>
-        <span class="hidden lg:inline text-slate-600">|</span>
-        <span class="hidden lg:flex items-center gap-1.5 text-emerald-400">
-          <i class="fa-solid fa-anchor"></i> Primary Port: JNPT / Nhava Sheva (Mumbai)
+        <span class="hidden md:flex items-center gap-1 text-slate-400">
+          <i class="fa-solid fa-shield-halved text-[#D4AF37]"></i> Verified FSSAI Facility • Ambad, Jalna
         </span>
       </div>
-      <div class="flex items-center gap-4 text-xs">
-        <a id="top-bar-email-link" href="mailto:ceo@ksrspicesmfgin.in" class="hover:text-[#00A6E8] transition-colors flex items-center gap-1.5">
-          <i class="fa-solid fa-envelope"></i> <span id="top-bar-email">ceo@ksrspicesmfgin.in</span>
+      <div class="flex items-center gap-5">
+        <a href="mailto:ceo@ksrspicesmfgin.in" class="hover:text-white transition flex items-center gap-1.5">
+          <i class="fa-regular fa-envelope text-[#00A6E8]"></i> <span id="dyn-email">ceo@ksrspicesmfgin.in</span>
         </a>
-        <a id="top-bar-phone-link" href="https://wa.me/919028310547" target="_blank" class="text-[#D4AF37] hover:underline font-semibold flex items-center gap-1">
-          <i class="fa-brands fa-whatsapp"></i> <span id="top-bar-phone">+91 9028310547</span>
+        <a href="https://wa.me/919028310547" target="_blank" class="hover:text-white transition flex items-center gap-1.5 text-emerald-400">
+          <i class="fa-brands fa-whatsapp"></i> <span id="dyn-phone">+91 9028310547</span>
         </a>
       </div>
     </div>
   </div>
 
-  <!-- STICKY MAIN HEADER -->
-  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200">
+  <!-- Main Navigation -->
+  <header class="sticky top-0 z-40 bg-[#071B33]/95 backdrop-blur-md border-b border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
-      <!-- LOGO & COMPANY NAME (Verbatim, no distortion) -->
-      <a href="javascript:void(0)" onclick="switchPage('home')" class="flex items-center gap-3 group">
-        <div class="w-14 h-14 rounded-full overflow-hidden border-2 border-[#D4AF37] shadow-md bg-[#071B33] flex items-center justify-center p-0.5 shrink-0">
-          <img 
-            id="brand-logo-img"
-            src="KSR MFG  LOGO_2.jpg" 
-            alt="KSR INTERNATIONAL TRADE MANUFACTURING Logo" 
-            onerror="this.onerror=null; this.src='KSR MFG  LOGO.jpg';"
-            class="w-full h-full object-cover rounded-full"
-          >
+      <!-- Company Brand & Official Logo -->
+      <a href="#home" class="flex items-center gap-3.5 group">
+        <div class="w-14 h-14 rounded-full overflow-hidden border-2 border-[#D4AF37] p-0.5 bg-[#071B33] shadow-md flex-shrink-0">
+          <img src="KSR%20MFG%20LOGO.png" alt="KSR Logo" class="w-full h-full object-cover rounded-full" onerror="this.onerror=null; this.src='KSR MFG  LOGO_2.jpg';">
         </div>
         <div class="flex flex-col">
-          <span class="font-extrabold text-base sm:text-lg tracking-tight text-[#071B33] leading-tight group-hover:text-[#00A6E8] transition-colors">
+          <span class="font-display tracking-wider text-white font-bold text-lg sm:text-xl group-hover:text-[#D4AF37] transition">
             KSR INTERNATIONAL
           </span>
-          <span class="text-[10px] tracking-widest uppercase font-semibold text-[#00A6E8]">
-            Trade Manufacturing • Spices Export
+          <span class="text-[10px] tracking-[0.25em] text-[#00A6E8] uppercase font-semibold">
+            TRADE MANUFACTURING
           </span>
-          <span class="text-[9px] text-slate-400 font-medium">Ambad, Jalna, Maharashtra</span>
         </div>
       </a>
 
-      <!-- DESKTOP NAV -->
-      <nav class="hidden xl:flex items-center gap-6 text-sm font-medium text-slate-700">
-        <button onclick="switchPage('home')" class="nav-link py-1 hover:text-[#00A6E8] transition-colors" data-page="home">Home</button>
-        <button onclick="switchPage('about')" class="nav-link py-1 hover:text-[#00A6E8] transition-colors" data-page="about">About Us</button>
-        <button onclick="switchPage('leadership')" class="nav-link py-1 hover:text-[#00A6E8] transition-colors flex items-center gap-1.5" data-page="leadership">
-          <i class="fa-solid fa-user-tie text-[#D4AF37]"></i> Leadership
-        </button>
-        <button onclick="switchPage('products')" class="nav-link py-1 hover:text-[#00A6E8] transition-colors" data-page="products">Products</button>
-        <button onclick="switchPage('manufacturing')" class="nav-link py-1 hover:text-[#00A6E8] transition-colors" data-page="manufacturing">Manufacturing</button>
-        <button onclick="switchPage('quality')" class="nav-link py-1 hover:text-[#00A6E8] transition-colors" data-page="quality">Quality & Facility</button>
-        <button onclick="switchPage('why-us')" class="nav-link py-1 hover:text-[#00A6E8] transition-colors" data-page="why-us">Why Choose Us</button>
-        <button onclick="switchPage('export-markets')" class="nav-link py-1 hover:text-[#00A6E8] transition-colors" data-page="export-markets">Export Markets</button>
-        <button onclick="switchPage('contact')" class="nav-link py-1 hover:text-[#00A6E8] transition-colors" data-page="contact">Contact Us</button>
+      <!-- Desktop Menu -->
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-200">
+        <a href="#home" class="hover:text-[#D4AF37] transition">Home</a>
+        <a href="#about" class="hover:text-[#D4AF37] transition">About Us</a>
+        <a href="#founder" class="hover:text-[#D4AF37] transition flex items-center gap-1 text-[#D4AF37]">
+          <i class="fa-solid fa-crown text-xs"></i> Leadership
+        </a>
+        <a href="#products" class="hover:text-[#D4AF37] transition">Products</a>
+        <a href="#manufacturing" class="hover:text-[#D4AF37] transition">Processing</a>
+        <a href="#quality" class="hover:text-[#D4AF37] transition">Quality & Docs</a>
+        <a href="#export" class="hover:text-[#D4AF37] transition">Export Markets</a>
+        <a href="#contact" class="hover:text-[#D4AF37] transition">Contact</a>
       </nav>
 
-      <!-- ACTION CTAS -->
-      <div class="hidden lg:flex items-center gap-3">
-        <button onclick="openWhatsAppQuote()" class="bg-emerald-600 hover:bg-emerald-700 text-white px-3.5 py-2.5 rounded-lg text-xs font-semibold flex items-center gap-2 transition-all shadow-sm">
-          <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp
-        </button>
-        <button onclick="openRfqModal()" class="bg-gradient-to-r from-[#00A6E8] to-[#0086bc] hover:brightness-110 text-white px-5 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider shadow-md hover:shadow-lg transition-all flex items-center gap-2 border border-[#00A6E8]/30">
-          <i class="fa-solid fa-file-invoice text-[#D4AF37]"></i> Get a Quote
-        </button>
+      <!-- Action Button -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="#contact" class="px-5 py-2.5 rounded-md bg-gradient-to-r from-[#D4AF37] to-[#B38F26] text-[#071B33] font-bold text-xs uppercase tracking-wider hover:opacity-95 shadow-lg transition">
+          Request Quote
+        </a>
       </div>
 
-      <!-- MOBILE HAMBURGER -->
-      <div class="xl:hidden flex items-center gap-2">
-        <button onclick="openRfqModal()" class="bg-[#00A6E8] text-white px-3 py-1.5 rounded text-xs font-bold">RFQ</button>
-        <button onclick="toggleMobileNav()" class="p-2 text-slate-700 hover:text-[#00A6E8] text-xl" aria-label="Toggle Menu">
-          <i id="mobile-nav-icon" class="fa-solid fa-bars"></i>
-        </button>
-      </div>
+      <!-- Mobile Hamburger -->
+      <button onclick="toggleMobileMenu()" class="lg:hidden text-white text-2xl focus:outline-none">
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+      </button>
     </div>
 
-    <!-- MOBILE DRAWER -->
-    <div id="mobile-nav-drawer" class="hidden xl:hidden bg-white border-b border-slate-200 px-6 py-5 shadow-2xl">
-      <div class="flex flex-col gap-3 text-sm font-semibold">
-        <button onclick="switchPage('home'); toggleMobileNav()" class="text-left py-2 border-b border-slate-100 text-slate-800 hover:text-[#00A6E8]">Home</button>
-        <button onclick="switchPage('about'); toggleMobileNav()" class="text-left py-2 border-b border-slate-100 text-slate-800 hover:text-[#00A6E8]">About Us</button>
-        <button onclick="switchPage('leadership'); toggleMobileNav()" class="text-left py-2 border-b border-slate-100 flex items-center justify-between text-slate-800 hover:text-[#00A6E8]">
-          <span>Founder & Leadership Profile</span>
-          <span class="text-[10px] bg-[#D4AF37]/20 text-[#071B33] px-2 py-0.5 rounded font-bold">Mr. Kunal Rathod</span>
-        </button>
-        <button onclick="switchPage('products'); toggleMobileNav()" class="text-left py-2 border-b border-slate-100 text-slate-800 hover:text-[#00A6E8]">Products Catalog (14 Spices)</button>
-        <button onclick="switchPage('manufacturing'); toggleMobileNav()" class="text-left py-2 border-b border-slate-100 text-slate-800 hover:text-[#00A6E8]">Manufacturing & Processing</button>
-        <button onclick="switchPage('quality'); toggleMobileNav()" class="text-left py-2 border-b border-slate-100 text-slate-800 hover:text-[#00A6E8]">Quality, Facility & Documentation</button>
-        <button onclick="switchPage('why-us'); toggleMobileNav()" class="text-left py-2 border-b border-slate-100 text-slate-800 hover:text-[#00A6E8]">Why Choose KSR</button>
-        <button onclick="switchPage('export-markets'); toggleMobileNav()" class="text-left py-2 border-b border-slate-100 text-slate-800 hover:text-[#00A6E8]">Export Markets & Logistics</button>
-        <button onclick="switchPage('contact'); toggleMobileNav()" class="text-left py-2 border-b border-slate-100 text-slate-800 hover:text-[#00A6E8]">Contact Us & RFQ</button>
-        <div class="pt-3 flex flex-col gap-2">
-          <button onclick="openRfqModal(); toggleMobileNav()" class="w-full bg-[#00A6E8] text-white py-2.5 rounded-lg font-bold text-center">
-            Request Official Bulk Quote
-          </button>
-          <button onclick="openWhatsAppQuote(); toggleMobileNav()" class="w-full bg-emerald-600 text-white py-2.5 rounded-lg font-bold text-center flex items-center justify-center gap-2">
-            <i class="fa-brands fa-whatsapp text-lg"></i> Direct WhatsApp
-          </button>
-        </div>
-      </div>
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-[#071B33] border-b border-slate-800 px-6 py-5 space-y-4">
+      <a href="#home" onclick="toggleMobileMenu()" class="block text-slate-200 hover:text-[#D4AF37]">Home</a>
+      <a href="#about" onclick="toggleMobileMenu()" class="block text-slate-200 hover:text-[#D4AF37]">About Us</a>
+      <a href="#founder" onclick="toggleMobileMenu()" class="block text-[#D4AF37] font-semibold">Founder & Leadership</a>
+      <a href="#products" onclick="toggleMobileMenu()" class="block text-slate-200 hover:text-[#D4AF37]">Products Portfolio</a>
+      <a href="#manufacturing" onclick="toggleMobileMenu()" class="block text-slate-200 hover:text-[#D4AF37]">Manufacturing Facility</a>
+      <a href="#quality" onclick="toggleMobileMenu()" class="block text-slate-200 hover:text-[#D4AF37]">Quality & Export Checklist</a>
+      <a href="#export" onclick="toggleMobileMenu()" class="block text-slate-200 hover:text-[#D4AF37]">Export Markets</a>
+      <a href="#contact" onclick="toggleMobileMenu()" class="block text-[#00A6E8] font-bold">Contact & RFQ</a>
     </div>
   </header>
 
-  <!-- ========================================================================= -->
-  <!-- 1. HOME PAGE SECTION -->
-  <!-- ========================================================================= -->
-  <section id="section-home" class="page-section active">
-    
-    <!-- Hero Section -->
-    <div class="relative bg-[#071B33] text-white overflow-hidden py-20 lg:py-28 border-b border-white/10">
-      <div class="absolute inset-0 bg-cover bg-center opacity-25 mix-blend-luminosity scale-105" style="background-image: url('https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=1920&q=80');"></div>
-      <div class="absolute inset-0 bg-gradient-to-r from-[#071B33] via-[#071B33]/90 to-transparent"></div>
-      
-      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="max-w-3xl">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-[#D4AF37]/40 text-[#D4AF37] text-xs font-semibold uppercase tracking-wider mb-6 backdrop-blur-md">
-            <i class="fa-solid fa-sparkles"></i> International Spice Manufacturing & Export
-          </div>
-          <h1 id="hero-headline" class="text-4xl sm:text-6xl font-black text-white tracking-tight leading-tight">
-            Premium Indian Spices. <br>
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#00A6E8] via-sky-300 to-[#D4AF37]">
-              Trusted Global Supply.
-            </span>
-          </h1>
-          <p id="hero-subtext" class="mt-6 text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl">
-            Manufacturing and exporting quality Indian spices with a commitment to consistency, reliable supply and international business partnerships.
-          </p>
+  <!-- HERO SECTION -->
+  <section id="home" class="relative bg-[#071B33] min-h-[90vh] flex items-center overflow-hidden">
+    <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#00A6E8_1px,transparent_1px)] [background-size:24px_24px]"></div>
+    <div class="absolute -right-20 -bottom-20 w-96 h-96 bg-[#D4AF37]/10 rounded-full blur-3xl pointer-events-none"></div>
 
-          <div class="mt-8 flex flex-col sm:flex-row gap-4 items-stretch sm:items-center">
-            <button onclick="switchPage('products')" class="bg-[#00A6E8] hover:bg-sky-500 text-white px-7 py-3.5 rounded-lg font-bold text-sm tracking-wide shadow-lg hover:shadow-cyan-500/25 transition-all flex items-center justify-center gap-2">
-              Explore Our Products <i class="fa-solid fa-arrow-right"></i>
-            </button>
-            <button onclick="openRfqModal()" class="border-2 border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#071B33] px-7 py-3.5 rounded-lg font-bold text-sm tracking-wide transition-all flex items-center justify-center gap-2 bg-white/5 backdrop-blur-sm">
-              Request a Quotation (RFQ)
-            </button>
-            <button onclick="openSampleModal()" class="text-slate-300 hover:text-white underline text-xs font-semibold py-2 text-center sm:text-left flex items-center justify-center gap-1">
-              Request Courier Samples <i class="fa-solid fa-chevron-right text-[10px] text-[#00A6E8]"></i>
-            </button>
-          </div>
-
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-8 mt-10 border-t border-white/10 text-left">
-            <div class="border-l-2 border-[#D4AF37] pl-3">
-              <div class="text-2xl font-bold text-white">7+ Years</div>
-              <div class="text-xs text-slate-400">Export-Import Experience</div>
-            </div>
-            <div class="border-l-2 border-[#00A6E8] pl-3">
-              <div class="text-2xl font-bold text-white">Direct Mfg</div>
-              <div class="text-xs text-slate-400">Processing & Grinding</div>
-            </div>
-            <div class="border-l-2 border-[#D4AF37] pl-3">
-              <div class="text-2xl font-bold text-white">JNPT Port</div>
-              <div class="text-xs text-slate-400">Direct Nhava Sheva FOB</div>
-            </div>
-            <div class="border-l-2 border-[#00A6E8] pl-3">
-              <div class="text-2xl font-bold text-white">B2B Custom</div>
-              <div class="text-xs text-slate-400">Bulk & Private Label</div>
-            </div>
-          </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10 grid lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-7 space-y-7 text-center lg:text-left">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#041021] border border-[#D4AF37]/40 text-[#D4AF37] text-xs font-semibold uppercase tracking-widest">
+          <i class="fa-solid fa-award"></i> Premier Indian Spice Manufacturer & Exporter
         </div>
-      </div>
-    </div>
-
-    <!-- Company Introduction Section -->
-    <div class="py-16 bg-white border-b border-slate-200">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          <div class="lg:col-span-6 space-y-6">
-            <div class="inline-block text-[#00A6E8] font-bold text-xs uppercase tracking-widest bg-sky-50 px-3 py-1 rounded border border-sky-200">
-              About KSR International
-            </div>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-[#071B33] leading-tight">
-              An Indian Spice Manufacturing & Export House Built for International Buyers
-            </h2>
-            <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
-              Based in Ambad, Jalna (Maharashtra, India), <strong>KSR INTERNATIONAL TRADE MANUFACTURING</strong> is dedicated to supplying premium Indian spices to international buyers, food processors, seasoning manufacturers, supermarket distributors, and institutional importers globally.
-            </p>
-            <p class="text-slate-600 leading-relaxed text-sm">
-              Led by Founder & Managing Director <strong>Mr. Kunal Rathod</strong>, who brings over 7 years of deep export-import industry expertise, KSR bridges direct agricultural spice origins with disciplined processing, stringent foreign-matter control, and transparent export documentation.
-            </p>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-              <div class="flex items-start gap-3 p-3.5 rounded-lg bg-slate-50 border border-slate-200">
-                <i class="fa-solid fa-circle-check text-[#00A6E8] mt-1"></i>
-                <div>
-                  <div class="font-bold text-xs text-[#071B33]">Direct Sourcing & Milling</div>
-                  <div class="text-[11px] text-slate-500">Not just an intermediary trader; direct facility control.</div>
-                </div>
-              </div>
-              <div class="flex items-start gap-3 p-3.5 rounded-lg bg-slate-50 border border-slate-200">
-                <i class="fa-solid fa-circle-check text-[#D4AF37] mt-1"></i>
-                <div>
-                  <div class="font-bold text-xs text-[#071B33]">Strict Documentation</div>
-                  <div class="text-[11px] text-slate-500">COO, Phyto, COA, B/L, and Fumigation on request.</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="pt-2 flex items-center gap-4">
-              <button onclick="switchPage('about')" class="text-xs font-bold text-[#071B33] hover:text-[#00A6E8] flex items-center gap-1 group">
-                Read full corporate profile <i class="fa-solid fa-chevron-right text-[10px] group-hover:translate-x-1 transition-transform"></i>
-              </button>
-              <span class="text-slate-300">|</span>
-              <button onclick="switchPage('leadership')" class="text-xs font-bold text-[#D4AF37] hover:underline flex items-center gap-1">
-                <i class="fa-solid fa-user-tie"></i> Founder's Message & Journey
-              </button>
-            </div>
-          </div>
-
-          <div class="lg:col-span-6 relative">
-            <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
-              <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=1000&q=80" alt="KSR Spice Processing & Storage" class="w-full h-[400px] object-cover">
-              <div class="absolute inset-0 bg-gradient-to-t from-[#071B33] via-transparent to-transparent opacity-80"></div>
-              <div class="absolute bottom-6 left-6 right-6 text-white">
-                <span class="text-[#D4AF37] text-xs font-bold tracking-widest uppercase">Origin: Maharashtra & India</span>
-                <p class="text-sm font-semibold mt-1">
-                  Hygienic processing, grading, grinding and container dispatch direct to worldwide seaports.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Featured Products Preview -->
-    <div class="py-20 bg-[#F5F8FA]">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
-          <div>
-            <div class="text-[#00A6E8] font-bold text-xs uppercase tracking-widest mb-2">Core Product Portfolio</div>
-            <h2 class="text-3xl font-extrabold text-[#071B33]">Export-Grade Whole Spices & Fine Powders</h2>
-            <p class="text-slate-600 text-sm mt-2 max-w-2xl">Processed and graded to international spice standards. Supplied in bulk containers or custom private label retail packs.</p>
-          </div>
-          <button onclick="switchPage('products')" class="mt-4 md:mt-0 inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-white border border-slate-300 hover:border-[#00A6E8] text-xs font-bold text-[#071B33] hover:text-[#00A6E8] transition-all shadow-sm">
-            View All 14 Products <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </div>
-
-        <div id="home-featured-products" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Populated dynamically via JS -->
-        </div>
-      </div>
-    </div>
-
-    <!-- Export Enquiry CTA Banner -->
-    <div class="py-16 bg-[#00A6E8] text-white text-center relative overflow-hidden">
-      <div class="relative max-w-4xl mx-auto px-4">
-        <span class="text-[#D4AF37] font-bold text-xs uppercase tracking-widest bg-[#071B33] px-3 py-1 rounded inline-block mb-3">
-          Global Importers • Seasoning Brands • Distributors
-        </span>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
-          Ready to Procure Bulk Indian Spices Directly from the Manufacturer?
-        </h2>
-        <p class="text-sky-100 text-sm sm:text-base mt-4 max-w-2xl mx-auto">
-          Connect directly with Mr. Kunal Rathod and our export team for competitive FOB Nhava Sheva or CIF destination quotes.
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-white leading-tight">
+          Premium Indian Spices. <br>
+          <span class="gold-gradient-text">Trusted Global Supply.</span>
+        </h1>
+        <p class="text-slate-300 text-base sm:text-lg max-w-2xl font-normal leading-relaxed">
+          Manufacturing and exporting high-grade Indian spices with a commitment to consistency, reliable supply, and long-term international business partnerships directly from Maharashtra, India.
         </p>
-        <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-          <button onclick="openRfqModal()" class="bg-[#071B33] hover:bg-slate-900 text-white px-8 py-3.5 rounded-lg font-bold text-sm tracking-wider uppercase shadow-xl transition-all">
+        <div class="flex flex-wrap gap-4 justify-center lg:justify-start pt-2">
+          <a href="#products" class="px-7 py-3.5 rounded-md bg-[#00A6E8] text-white font-bold text-sm tracking-wide hover:bg-sky-500 shadow-lg shadow-sky-500/25 transition">
+            Explore Spice Catalog
+          </a>
+          <a href="#contact" class="px-7 py-3.5 rounded-md bg-transparent border-2 border-[#D4AF37] text-[#D4AF37] font-bold text-sm tracking-wide hover:bg-[#D4AF37] hover:text-[#071B33] transition">
             Request Bulk Quotation
-          </button>
-          <button onclick="openWhatsAppQuote()" class="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3.5 rounded-lg font-bold text-sm tracking-wider uppercase shadow-xl transition-all flex items-center justify-center gap-2">
-            <i class="fa-brands fa-whatsapp text-lg"></i> Message on WhatsApp
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================================================= -->
-  <!-- 2. ABOUT US PAGE SECTION -->
-  <!-- ========================================================================= -->
-  <section id="section-about" class="page-section">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <div class="border-b border-slate-200 pb-10 mb-12">
-        <div class="inline-block text-[#00A6E8] font-bold text-xs uppercase tracking-widest bg-sky-50 px-3 py-1 rounded mb-3">
-          Corporate Overview & Heritage
-        </div>
-        <h1 class="text-3xl sm:text-5xl font-black text-[#071B33] tracking-tight">
-          About KSR International Trade Manufacturing
-        </h1>
-        <p class="text-slate-600 text-base sm:text-lg max-w-3xl mt-4 leading-relaxed">
-          A premier Indian spice manufacturing, processing, and export enterprise dedicated to delivering authentic quality, consistency, and transparent value to the global food sector.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mb-16">
-        <div class="lg:col-span-7 space-y-6 text-slate-700 text-sm sm:text-base leading-relaxed">
-          <h2 class="text-2xl font-bold text-[#071B33]">Bridging Indian Agricultural Abundance with Global Food Standards</h2>
-          <p>
-            Founded and strategically situated at <strong>Ambad, Jalna (Maharashtra, India)</strong>, KSR International Trade Manufacturing operates with an unwavering commitment to the international spice trade. We specialize in the sourcing, hygienic sorting, grading, cool grinding, and containerized export of whole spices, pure spice powders, and bespoke spice blends.
-          </p>
-          <p>
-            The enterprise is steered by Founder and Managing Director <strong>Mr. Kunal Rathod</strong>, who brings over 7 years of hands-on export-import industry experience. Under his stewardship, KSR was established not merely as a merchant intermediary, but as a dedicated, manufacturing-centric supplier equipped to satisfy the technical requirements of industrial food processors, millers, and retail distributors across the Middle East, Southeast Asia, Africa, and Europe.
-          </p>
-          <div class="bg-slate-100 p-6 rounded-xl border-l-4 border-[#00A6E8] space-y-2">
-            <div class="font-bold text-[#071B33] text-sm uppercase tracking-wide">Our Core Positioning</div>
-            <p class="text-slate-600 text-xs sm:text-sm">
-              KSR is an Indian spice manufacturing, processing and export company focused on supplying quality Indian spices to international buyers, importers, distributors, food processors and seasoning manufacturers.
-            </p>
-          </div>
-          <p>
-            Maharashtra and its contiguous states represent some of the world's most acclaimed agricultural belts for turmeric, red chilli, cumin, and coriander. By establishing manufacturing close to primary procurement centers and linking directly with primary ocean container terminals at <strong>JNPT (Nhava Sheva, Mumbai)</strong>, KSR ensures optimum freshness, competitive pricing, and streamlined supply chains.
-          </p>
-          <div class="pt-4 flex flex-wrap gap-4 items-center">
-            <button onclick="switchPage('leadership')" class="bg-[#071B33] hover:bg-[#00A6E8] text-white px-5 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-colors flex items-center gap-2">
-              <i class="fa-solid fa-user-tie text-[#D4AF37]"></i> Read Founder's Message & Profile
-            </button>
-            <button onclick="switchPage('manufacturing')" class="border border-slate-300 hover:border-[#071B33] text-[#071B33] px-5 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-colors">
-              Explore Processing Facilities
-            </button>
-          </div>
+          </a>
         </div>
 
-        <div class="lg:col-span-5 bg-white p-8 rounded-2xl border border-slate-200 shadow-lg space-y-6">
-          <div class="flex items-center gap-3 pb-4 border-b border-slate-100">
-            <div class="w-12 h-12 rounded-lg bg-[#071B33] text-[#D4AF37] font-black text-xl flex items-center justify-center font-cinzel">
-              KSR
-            </div>
-            <div>
-              <h3 class="font-bold text-[#071B33] text-base">Corporate Factsheet</h3>
-              <p class="text-xs text-slate-500">KSR International Trade Manufacturing</p>
-            </div>
-          </div>
-          <div class="space-y-4 text-xs">
-            <div>
-              <span class="text-slate-400 block font-semibold uppercase">Business Focus</span>
-              <span class="text-slate-800 font-bold text-sm">Spice Manufacturing, Processing & Export</span>
-            </div>
-            <div>
-              <span class="text-slate-400 block font-semibold uppercase">Operating Origin</span>
-              <span class="text-slate-800 font-bold">Ambad, Jalna, Maharashtra, India</span>
-            </div>
-            <div>
-              <span class="text-slate-400 block font-semibold uppercase">Leadership</span>
-              <span class="text-slate-800 font-bold">Mr. Kunal Rathod (Managing Director / Founder)</span>
-            </div>
-            <div>
-              <span class="text-slate-400 block font-semibold uppercase">Trade Industry Experience</span>
-              <span class="text-slate-800 font-bold">7+ Years in Export-Import Business</span>
-            </div>
-            <div>
-              <span class="text-slate-400 block font-semibold uppercase">Primary Sea Port</span>
-              <span class="text-slate-800 font-bold">JNPT / Nhava Sheva (Mumbai)</span>
-            </div>
-            <div>
-              <span class="text-slate-400 block font-semibold uppercase">Supported Incoterms</span>
-              <span class="text-slate-800 font-bold">FOB, CIF, CFR, EXW</span>
-            </div>
-          </div>
-          <div class="pt-4 border-t border-slate-100">
-            <button onclick="openRfqModal()" class="w-full bg-[#00A6E8] hover:bg-sky-600 text-white py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-colors">
-              Initiate Commercial Inquiry
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================================================= -->
-  <!-- 3. FOUNDER & LEADERSHIP PAGE (Mr. Kunal Rathod) -->
-  <!-- ========================================================================= -->
-  <section id="section-leadership" class="page-section">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      
-      <!-- Executive Profile Banner -->
-      <div class="bg-[#071B33] rounded-3xl text-white p-8 sm:p-12 lg:p-16 relative overflow-hidden border border-[#D4AF37]/30 shadow-2xl mb-16">
-        <div class="relative grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-          
-          <div class="lg:col-span-7 space-y-4">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#D4AF37]/20 border border-[#D4AF37] text-[#D4AF37] text-xs font-bold uppercase tracking-wider">
-              Executive Profile
-            </div>
-            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight">
-              Leadership Built on Vision, Commitment & Trust
-            </h1>
-            <p class="text-slate-300 text-sm sm:text-base max-w-2xl">
-              Meet the Founder behind <strong>KSR INTERNATIONAL TRADE MANUFACTURING</strong>, advancing Indian spice processing through disciplined international trade standards.
-            </p>
-            
-            <div class="pt-4">
-              <div class="text-2xl font-bold text-white tracking-wide">Mr. Kunal Rathod</div>
-              <div class="text-sm font-semibold text-[#00A6E8] tracking-widest uppercase">Managing Director / Founder</div>
-              <div class="text-xs text-slate-400 mt-1">KSR International Trade Manufacturing • Ambad, Jalna, Maharashtra, India</div>
-            </div>
-
-            <div class="pt-4 flex flex-wrap gap-3">
-              <a href="https://www.linkedin.com/in/mr-kunal-rathod/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-[#0077b5] hover:bg-[#006097] text-white px-4 py-2.5 rounded-lg text-xs font-bold transition-colors shadow-md">
-                <i class="fa-brands fa-linkedin"></i> LinkedIn Profile
-              </a>
-              <button onclick="openWhatsAppQuote('Hello Mr. Kunal Rathod, I am connecting directly from your Leadership page.')" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2.5 rounded-lg text-xs font-bold transition-colors shadow-md">
-                <i class="fa-brands fa-whatsapp"></i> Direct WhatsApp
-              </button>
-              <a href="mailto:ceo@ksrspicesmfgin.in" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-4 py-2.5 rounded-lg text-xs font-bold transition-colors border border-white/20">
-                <i class="fa-solid fa-envelope"></i> ceo@ksrspicesmfgin.in
-              </a>
-            </div>
-          </div>
-
-          <!-- Founder Portrait Display -->
-          <div class="lg:col-span-5 flex justify-center">
-            <div class="relative group">
-              <div class="w-72 sm:w-80 rounded-2xl bg-gradient-to-b from-[#0e2746] to-[#071B33] border-2 border-[#D4AF37] p-3 shadow-2xl relative overflow-hidden">
-                <div class="w-full flex justify-between items-center text-[10px] text-[#D4AF37] font-mono uppercase tracking-wider px-2 py-1 mb-2 border-b border-white/10">
-                  <span>FOUNDER & MD</span>
-                  <span>MAHARASHTRA, INDIA</span>
-                </div>
-                
-                <div class="relative w-full h-[380px] rounded-xl overflow-hidden shadow-inner bg-slate-900 border border-white/10">
-                  <img 
-                    id="founder-portrait-img"
-                    src="watermarked_img_7145325385976727919.png" 
-                    alt="Mr. Kunal Rathod - Founder & Managing Director" 
-                    onerror="this.onerror=null; this.src='Kunal Gem.jpg';"
-                    class="w-full h-full object-cover object-top filter brightness-105 contrast-105 group-hover:scale-105 transition-transform duration-500"
-                  >
-                  <div class="absolute inset-0 bg-gradient-to-t from-[#071B33] via-transparent to-transparent opacity-70 pointer-events-none"></div>
-                  <div class="absolute bottom-3 left-3 right-3 bg-black/60 backdrop-blur-md p-3 rounded-lg border border-white/15 text-center">
-                    <div class="text-sm font-bold text-white tracking-wide">Mr. Kunal Rathod</div>
-                    <div class="text-[10px] text-[#00A6E8] font-bold tracking-wider uppercase">Managing Director / Founder</div>
-                    <div class="text-[9px] text-[#D4AF37] mt-0.5 font-medium">KSR International Trade Manufacturing</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="absolute -bottom-3 -right-3 bg-gradient-to-r from-[#D4AF37] to-amber-500 text-[#071B33] px-3.5 py-1.5 rounded-full text-xs font-black uppercase tracking-wider shadow-xl border border-white/40 flex items-center gap-1.5">
-                <i class="fa-solid fa-sparkles"></i> 7+ Years Experience
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Verbatim Founder Message -->
-      <div class="bg-white p-8 sm:p-12 rounded-2xl border border-slate-200 shadow-sm mb-16 relative">
-        <div class="max-w-4xl mx-auto space-y-6">
-          <div class="inline-block text-[#D4AF37] font-bold text-xs uppercase tracking-widest bg-amber-50 px-3 py-1 rounded border border-amber-200">
-            Leadership Statement
-          </div>
-          <h2 class="text-3xl font-extrabold text-[#071B33]">A Message from Our Founder</h2>
-          <div class="text-slate-700 text-base sm:text-lg leading-relaxed space-y-4 font-serif italic">
-            <p>"At KSR INTERNATIONAL TRADE MANUFACTURING, our vision is to build a trusted Indian spice manufacturing and export company that delivers quality, consistency and value to international buyers."</p>
-            <p>"Our journey is driven by a strong commitment to understanding global market requirements, developing reliable supply relationships and maintaining a customer-focused approach."</p>
-            <p>"We believe that long-term business partnerships are built through transparency, product quality, professional communication and consistent performance."</p>
-            <p>"As we continue to grow, our focus remains on strengthening our manufacturing capabilities and connecting Indian spice expertise with global markets."</p>
-            <p class="not-italic font-sans text-sm text-slate-600 font-normal">Thank you for your trust and interest in KSR.</p>
-          </div>
-          <div class="pt-6 border-t border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-            <div>
-              <div class="font-bold text-[#071B33] text-lg">Mr. Kunal Rathod</div>
-              <div class="text-xs font-semibold text-[#00A6E8] uppercase tracking-wider">Managing Director / Founder</div>
-              <div class="text-xs text-slate-500">KSR INTERNATIONAL TRADE MANUFACTURING</div>
-            </div>
-            <button onclick="openRfqModal()" class="bg-[#071B33] hover:bg-[#00A6E8] text-white px-5 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-colors self-start sm:self-auto">
-              Connect with Our Founder
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- 5-Stage Career Timeline -->
-      <div class="mb-16">
-        <div class="text-center max-w-2xl mx-auto mb-12">
-          <span class="text-[#00A6E8] font-bold text-xs uppercase tracking-widest">Professional Trajectory</span>
-          <h2 class="text-3xl font-extrabold text-[#071B33] mt-1">The Founder's Journey</h2>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
-          <div class="bg-white p-5 rounded-xl border border-slate-200 hover:border-[#D4AF37] transition-all">
-            <div class="text-lg font-black text-[#D4AF37] mb-2">2019</div>
-            <div class="text-sm font-bold text-[#071B33] mb-1">Export-Import Roots</div>
-            <div class="text-xs text-slate-600 leading-relaxed">Commencement of the export-import trade journey, mastering customs clearance, shipping documentation, and cross-border logistics.</div>
-          </div>
-          <div class="bg-white p-5 rounded-xl border border-slate-200 hover:border-[#D4AF37] transition-all">
-            <div class="text-lg font-black text-[#D4AF37] mb-2">2020-21</div>
-            <div class="text-sm font-bold text-[#071B33] mb-1">Global Relations</div>
-            <div class="text-xs text-slate-600 leading-relaxed">Development of direct relationships with overseas buyers, understanding destination quality criteria, moisture thresholds, and packaging.</div>
-          </div>
-          <div class="bg-white p-5 rounded-xl border border-slate-200 hover:border-[#D4AF37] transition-all">
-            <div class="text-lg font-black text-[#D4AF37] mb-2">2022-23</div>
-            <div class="text-sm font-bold text-[#071B33] mb-1">Trade Operations</div>
-            <div class="text-xs text-slate-600 leading-relaxed">Execution of international shipments, container freight optimization through JNPT Nhava Sheva, and buyer risk management.</div>
-          </div>
-          <div class="bg-white p-5 rounded-xl border border-slate-200 hover:border-[#D4AF37] transition-all">
-            <div class="text-lg font-black text-[#D4AF37] mb-2">2024</div>
-            <div class="text-sm font-bold text-[#071B33] mb-1">Manufacturing Focus</div>
-            <div class="text-xs text-slate-600 leading-relaxed">Strategic expansion into dedicated spice processing, cleaning, grading, and grinding facilities in Ambad, Jalna (Maharashtra).</div>
-          </div>
-          <div class="bg-white p-5 rounded-xl border border-slate-200 hover:border-[#D4AF37] transition-all">
-            <div class="text-lg font-black text-[#D4AF37] mb-2">Present</div>
-            <div class="text-sm font-bold text-[#071B33] mb-1">Global Scale</div>
-            <div class="text-xs text-slate-600 leading-relaxed">Positioning KSR International Trade Manufacturing as an integrated manufacturer supplying overseas importers and food industries.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================================================= -->
-  <!-- 4. PRODUCTS PAGE SECTION (14 Spices + Filter) -->
-  <!-- ========================================================================= -->
-  <section id="section-products" class="page-section">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      
-      <div class="text-center max-w-3xl mx-auto mb-10">
-        <span class="text-[#00A6E8] font-bold text-xs uppercase tracking-widest bg-sky-50 px-3 py-1 rounded">
-          Export Catalog
-        </span>
-        <h1 class="text-3xl sm:text-5xl font-black text-[#071B33] tracking-tight mt-3">
-          Our Spice Portfolio
-        </h1>
-        <p class="text-slate-600 text-sm sm:text-base mt-3">
-          Premium Indian Whole Spices, Fine Pulverized Spice Powders, and Tailored Blends. Available in standard export bulk packaging and private label formats.
-        </p>
-      </div>
-
-      <!-- Filter Buttons -->
-      <div class="flex flex-wrap items-center justify-center gap-2 mb-10">
-        <button onclick="filterProducts('all')" class="prod-filter-btn active px-5 py-2.5 rounded-full text-xs font-bold transition-all bg-[#071B33] text-white shadow-md" data-category="all">All Products (14)</button>
-        <button onclick="filterProducts('whole')" class="prod-filter-btn px-5 py-2.5 rounded-full text-xs font-bold transition-all bg-white text-slate-700 border border-slate-200 hover:border-[#00A6E8]" data-category="whole">Whole Spices (8)</button>
-        <button onclick="filterProducts('powder')" class="prod-filter-btn px-5 py-2.5 rounded-full text-xs font-bold transition-all bg-white text-slate-700 border border-slate-200 hover:border-[#00A6E8]" data-category="powder">Spice Powders (4)</button>
-        <button onclick="filterProducts('blend')" class="prod-filter-btn px-5 py-2.5 rounded-full text-xs font-bold transition-all bg-white text-slate-700 border border-slate-200 hover:border-[#00A6E8]" data-category="blend">Spice Blends & OEM (2)</button>
-      </div>
-
-      <!-- All Product Cards Grid -->
-      <div id="products-catalog-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-        <!-- Rendered dynamically via JavaScript -->
-      </div>
-
-      <!-- Packaging & Bulk Supply Specs -->
-      <div class="bg-white rounded-2xl border border-slate-200 p-8 sm:p-10 mb-16 shadow-sm">
-        <div class="max-w-3xl mb-8">
-          <span class="text-[#00A6E8] font-bold text-xs uppercase tracking-widest">Container Stuffing & Packaging</span>
-          <h2 class="text-2xl sm:text-3xl font-extrabold text-[#071B33] mt-1">Packaging & Bulk Supply Specifications</h2>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div class="p-5 rounded-xl bg-slate-50 border border-slate-200">
-            <div class="flex items-center gap-2 font-bold text-sm text-[#071B33] mb-3">
-              <i class="fa-solid fa-box-open text-[#00A6E8]"></i> Bulk Export Packaging
-            </div>
-            <ul class="text-xs text-slate-600 space-y-2">
-              <li>• <strong>25 kg & 50 kg PP Bags:</strong> High-tensile woven polypropylene.</li>
-              <li>• <strong>Multi-layer Kraft Paper:</strong> With inner food-grade PE barrier.</li>
-              <li>• <strong>Jute Bags:</strong> Traditional natural jute with inner poly liners.</li>
-              <li>• <strong>Corrugated Cartons:</strong> Heavy-duty 5-ply & 7-ply export boxes.</li>
-            </ul>
-          </div>
-          <div class="p-5 rounded-xl bg-slate-50 border border-slate-200">
-            <div class="flex items-center gap-2 font-bold text-sm text-[#071B33] mb-3">
-              <i class="fa-solid fa-cubes text-[#D4AF37]"></i> Retail & Private Label (OEM)
-            </div>
-            <ul class="text-xs text-slate-600 space-y-2">
-              <li>• <strong>Stand-Up Pouches:</strong> Resealable zipper, matte/gloss with window.</li>
-              <li>• <strong>Pillow Pouches:</strong> 100g, 200g, 500g, 1kg retail sachets.</li>
-              <li>• <strong>PET & Glass Jars:</strong> Tamper-evident seasoning shakers.</li>
-              <li>• <strong>Vacuum Packs:</strong> Maximum aroma & essential oil preservation.</li>
-            </ul>
-          </div>
-          <div class="p-5 rounded-xl bg-slate-50 border border-slate-200">
-            <div class="flex items-center gap-2 font-bold text-sm text-[#071B33] mb-3">
-              <i class="fa-solid fa-truck-container text-[#00A6E8]"></i> Container Loadability & FCL
-            </div>
-            <ul class="text-xs text-slate-600 space-y-2">
-              <li>• <strong>20ft FCL Container:</strong> Standard 12 to 18 Metric Tons loadability.</li>
-              <li>• <strong>40ft FCL / High Cube:</strong> Up to 26 Metric Tons bulk loadability.</li>
-              <li>• <strong>Palletization:</strong> ISPM-15 heat-treated wooden/plastic pallets.</li>
-              <li>• <strong>Unpalletized Floor Load:</strong> Maximizes cargo volume per container.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================================================= -->
-  <!-- 5. MANUFACTURING & PROCESSING PAGE SECTION -->
-  <!-- ========================================================================= -->
-  <section id="section-manufacturing" class="page-section">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <div class="max-w-3xl mb-12">
-        <span class="text-[#00A6E8] font-bold text-xs uppercase tracking-widest bg-sky-50 px-3 py-1 rounded">Factory & Operations</span>
-        <h1 class="text-3xl sm:text-5xl font-black text-[#071B33] tracking-tight mt-3">Manufacturing & Processing Workflow</h1>
-        <p class="text-slate-600 text-sm sm:text-base mt-3 leading-relaxed">
-          Our Ambad, Jalna facility operates an integrated manufacturing process designed to eliminate foreign contaminants, preserve natural colour and volatile oils, and achieve exact buyer particle specifications.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-        <div class="bg-white p-6 rounded-xl border border-slate-200 hover:border-[#00A6E8] shadow-sm transition-all">
-          <span class="text-3xl font-black text-[#D4AF37]">01</span>
-          <h3 class="font-bold text-[#071B33] text-base my-2">Raw Material Sourcing</h3>
-          <p class="text-slate-600 text-xs leading-relaxed">Direct farm and mandi sourcing across premier growing belts in Maharashtra & India.</p>
-        </div>
-        <div class="bg-white p-6 rounded-xl border border-slate-200 hover:border-[#00A6E8] shadow-sm transition-all">
-          <span class="text-3xl font-black text-[#D4AF37]">02</span>
-          <h3 class="font-bold text-[#071B33] text-base my-2">Raw Material Inspection</h3>
-          <p class="text-slate-600 text-xs leading-relaxed">Primary sampling checking moisture content, aroma, visual purity, and foreign organic matter.</p>
-        </div>
-        <div class="bg-white p-6 rounded-xl border border-slate-200 hover:border-[#00A6E8] shadow-sm transition-all">
-          <span class="text-3xl font-black text-[#D4AF37]">03</span>
-          <h3 class="font-bold text-[#071B33] text-base my-2">Cleaning and Sorting</h3>
-          <p class="text-slate-600 text-xs leading-relaxed">Multi-deck vibro-screen cleaners, air aspirators, and magnetic separators remove dust, stones, and chaff.</p>
-        </div>
-        <div class="bg-white p-6 rounded-xl border border-slate-200 hover:border-[#00A6E8] shadow-sm transition-all">
-          <span class="text-3xl font-black text-[#D4AF37]">04</span>
-          <h3 class="font-bold text-[#071B33] text-base my-2">Grading and Processing</h3>
-          <p class="text-slate-600 text-xs leading-relaxed">Precision size grading (cardamom millimeter screens, whole chilli length, stem sorting, bold seed separation).</p>
-        </div>
-        <div class="bg-white p-6 rounded-xl border border-slate-200 hover:border-[#00A6E8] shadow-sm transition-all">
-          <span class="text-3xl font-black text-[#D4AF37]">05</span>
-          <h3 class="font-bold text-[#071B33] text-base my-2">Grinding & Powder Milling</h3>
-          <p class="text-slate-600 text-xs leading-relaxed">Temperature-monitored pulverizing mills preserving delicate volatile oils and target mesh consistency.</p>
-        </div>
-        <div class="bg-white p-6 rounded-xl border border-slate-200 hover:border-[#00A6E8] shadow-sm transition-all">
-          <span class="text-3xl font-black text-[#D4AF37]">06</span>
-          <h3 class="font-bold text-[#071B33] text-base my-2">Quality Inspection</h3>
-          <p class="text-slate-600 text-xs leading-relaxed">Rigorous batch quality audits: moisture checks, sieve analysis (mesh size), colour consistency, and aroma.</p>
-        </div>
-        <div class="bg-white p-6 rounded-xl border border-slate-200 hover:border-[#00A6E8] shadow-sm transition-all">
-          <span class="text-3xl font-black text-[#D4AF37]">07</span>
-          <h3 class="font-bold text-[#071B33] text-base my-2">Packaging & Sealing</h3>
-          <p class="text-slate-600 text-xs leading-relaxed">Hygienic packing into moisture-barrier PP sacks, Kraft multi-wall bags, or private label pouches.</p>
-        </div>
-        <div class="bg-white p-6 rounded-xl border border-slate-200 hover:border-[#00A6E8] shadow-sm transition-all">
-          <span class="text-3xl font-black text-[#D4AF37]">08</span>
-          <h3 class="font-bold text-[#071B33] text-base my-2">Final Dispatch & Port Transit</h3>
-          <p class="text-slate-600 text-xs leading-relaxed">Container stuffing, palletization, fumigation, customs clearance, and road transit to JNPT Nhava Sheva (Mumbai).</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================================================= -->
-  <!-- 6. QUALITY & FACILITY PAGE SECTION -->
-  <!-- ========================================================================= -->
-  <section id="section-quality" class="page-section">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <div class="max-w-3xl mb-12">
-        <span class="text-[#00A6E8] font-bold text-xs uppercase tracking-widest bg-sky-50 px-3 py-1 rounded">Standards & Compliance</span>
-        <h1 class="text-3xl sm:text-5xl font-black text-[#071B33] tracking-tight mt-3">Quality Assurance & Export Documentation</h1>
-      </div>
-
-      <div class="bg-amber-50 border-l-4 border-[#D4AF37] p-5 rounded-r-xl mb-12 text-slate-800">
-        <div class="flex items-start gap-3">
-          <i class="fa-solid fa-shield-halved text-[#D4AF37] text-lg mt-0.5"></i>
+        <!-- Metric Badges -->
+        <div class="grid grid-cols-3 gap-4 pt-8 border-t border-slate-800 text-left">
           <div>
-            <div class="text-xs font-bold uppercase tracking-wider text-[#071B33]">Official Company Statement</div>
-            <p class="text-sm font-medium mt-1">"Product specifications, quality documentation, and applicable export documents are available to buyers upon request."</p>
-            <p class="text-xs text-slate-500 mt-1">KSR follows authentic corporate compliance practices and does not advertise unverified certifications, laboratory accreditations, or fictitious claims.</p>
+            <div class="text-2xl sm:text-3xl font-display font-bold text-white">7+</div>
+            <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Years Trade Experience</div>
           </div>
-        </div>
-      </div>
-
-      <!-- Export Documentation Checklist -->
-      <div class="bg-white rounded-2xl border border-slate-200 p-8 sm:p-10 mb-16 shadow-sm">
-        <h2 class="text-2xl font-bold text-[#071B33] mb-6">Complete Export Documentation Checklist</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="p-5 rounded-xl bg-slate-50 border border-slate-200">
-            <h4 class="font-bold text-[#071B33] text-sm"><i class="fa-solid fa-file-contract text-[#00A6E8] mr-2"></i> Certificate of Origin (COO)</h4>
-            <p class="text-slate-600 text-xs mt-1">Issued by authorized chambers of commerce confirming authentic Indian agricultural origin for preferential tariff treatment.</p>
-          </div>
-          <div class="p-5 rounded-xl bg-slate-50 border border-slate-200">
-            <h4 class="font-bold text-[#071B33] text-sm"><i class="fa-solid fa-file-invoice text-[#00A6E8] mr-2"></i> Commercial Invoice & Packing List</h4>
-            <p class="text-slate-600 text-xs mt-1">Itemized documentation specifying gross/net weight, lot numbers, container numbers, and seal counts.</p>
-          </div>
-          <div class="p-5 rounded-xl bg-slate-50 border border-slate-200">
-            <h4 class="font-bold text-[#071B33] text-sm"><i class="fa-solid fa-ship text-[#00A6E8] mr-2"></i> Bill of Lading (B/L)</h4>
-            <p class="text-slate-600 text-xs mt-1">Clean on Board ocean B/L issued by global shipping lines (Maersk, MSC, CMA CGM, Hapag-Lloyd).</p>
-          </div>
-          <div class="p-5 rounded-xl bg-slate-50 border border-slate-200">
-            <h4 class="font-bold text-[#071B33] text-sm"><i class="fa-solid fa-seedling text-[#00A6E8] mr-2"></i> Phytosanitary Certificate</h4>
-            <p class="text-slate-600 text-xs mt-1">Official plant quarantine certification verifying cargo is pest-free and compliant with importing destination quarantine laws.</p>
-          </div>
-          <div class="p-5 rounded-xl bg-slate-50 border border-slate-200">
-            <h4 class="font-bold text-[#071B33] text-sm"><i class="fa-solid fa-flask text-[#00A6E8] mr-2"></i> Certificate of Analysis (COA)</h4>
-            <p class="text-slate-600 text-xs mt-1">Batch testing reports confirming physical and chemical parameters (moisture, volatile oils, curcumin, SHU).</p>
-          </div>
-          <div class="p-5 rounded-xl bg-slate-50 border border-slate-200">
-            <h4 class="font-bold text-[#071B33] text-sm"><i class="fa-solid fa-spray-can text-[#00A6E8] mr-2"></i> Fumigation Certificate</h4>
-            <p class="text-slate-600 text-xs mt-1">Professional methyl bromide (MBr) or phosphine (ALP) fumigation certificate verifying treatment of cargo and container.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================================================= -->
-  <!-- 7. WHY CHOOSE US PAGE SECTION -->
-  <!-- ========================================================================= -->
-  <section id="section-why-us" class="page-section">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <div class="text-center max-w-3xl mx-auto mb-14">
-        <span class="text-[#00A6E8] font-bold text-xs uppercase tracking-widest bg-sky-50 px-3 py-1 rounded">Strategic Supplier Partner</span>
-        <h1 class="text-3xl sm:text-5xl font-black text-[#071B33] tracking-tight mt-3">Why International Buyers Partner With KSR</h1>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-        <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm">
-          <div class="w-12 h-12 rounded-xl bg-sky-50 text-[#00A6E8] flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-industry"></i></div>
-          <h3 class="text-base font-bold text-[#071B33] mb-2">Manufacturing-Focused Business</h3>
-          <p class="text-slate-600 text-xs leading-relaxed">Direct processors and grinders, not merely brokers. Enables complete control over cleaning, sorting, particle mesh, and batch packaging.</p>
-        </div>
-        <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm">
-          <div class="w-12 h-12 rounded-xl bg-amber-50 text-[#D4AF37] flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-wheat-awn"></i></div>
-          <h3 class="text-base font-bold text-[#071B33] mb-2">Indian Spice Sourcing Expertise</h3>
-          <p class="text-slate-600 text-xs leading-relaxed">Direct agrarian sourcing ties across Maharashtra, Gujarat, Andhra Pradesh, and Kerala ensure direct access to freshly harvested crops.</p>
-        </div>
-        <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm">
-          <div class="w-12 h-12 rounded-xl bg-sky-50 text-[#00A6E8] flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-boxes-stacked"></i></div>
-          <h3 class="text-base font-bold text-[#071B33] mb-2">Private Label & OEM Solutions</h3>
-          <p class="text-slate-600 text-xs leading-relaxed">Turnkey packaging: custom stand-up zipper pouches, PET seasoning jars, and buyer-branded cartons ready for supermarket shelves.</p>
-        </div>
-        <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm">
-          <div class="w-12 h-12 rounded-xl bg-amber-50 text-[#D4AF37] flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-tags"></i></div>
-          <h3 class="text-base font-bold text-[#071B33] mb-2">Competitive Export Pricing</h3>
-          <p class="text-slate-600 text-xs leading-relaxed">Eliminating layers of intermediary trade brokers grants overseas buyers direct farm-gate and factory-direct pricing efficiencies.</p>
-        </div>
-        <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm">
-          <div class="w-12 h-12 rounded-xl bg-sky-50 text-[#00A6E8] flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-file-shield"></i></div>
-          <h3 class="text-base font-bold text-[#071B33] mb-2">Export Documentation Support</h3>
-          <p class="text-slate-600 text-xs leading-relaxed">Zero-friction customs logistics with Phytosanitary certificates, COA, COO, and prompt courier delivery of negotiable B/L sets.</p>
-        </div>
-        <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm">
-          <div class="w-12 h-12 rounded-xl bg-amber-50 text-[#D4AF37] flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-handshake"></i></div>
-          <h3 class="text-base font-bold text-[#071B33] mb-2">Long-Term Partnerships</h3>
-          <p class="text-slate-600 text-xs leading-relaxed">We value recurring container supply agreements over spot trades, prioritizing customer retention through consistency and commercial fairness.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================================================= -->
-  <!-- 8. EXPORT MARKETS PAGE SECTION -->
-  <!-- ========================================================================= -->
-  <section id="section-export-markets" class="page-section">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <div class="max-w-3xl mb-12">
-        <span class="text-[#00A6E8] font-bold text-xs uppercase tracking-widest bg-sky-50 px-3 py-1 rounded">Global Corridors</span>
-        <h1 class="text-3xl sm:text-5xl font-black text-[#071B33] tracking-tight mt-3">Export Markets & Logistics Gateway</h1>
-      </div>
-
-      <div class="bg-white rounded-2xl border border-slate-200 p-8 mb-12 shadow-sm">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div>
-            <h3 class="text-xl font-bold text-[#071B33] mb-3"><i class="fa-solid fa-anchor text-[#00A6E8] mr-2"></i> Origin Port: JNPT Nhava Sheva (Mumbai)</h3>
-            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
-              Rapid corridor transit from Ambad, Jalna to Nhava Sheva guarantees prompt vessel sailings, reduced container turnaround time, and competitive ocean freight to major global hubs.
-            </p>
-            <div class="text-xs font-semibold text-slate-700">Supported Incoterms: <span class="text-[#00A6E8]">FOB (Nhava Sheva) • CIF (Destination) • CFR • EXW</span></div>
+            <div class="text-2xl sm:text-3xl font-display font-bold text-[#D4AF37]">100%</div>
+            <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Pure Indian Origin</div>
           </div>
-          <div class="bg-[#071B33] p-6 rounded-xl text-white text-xs space-y-2 border border-[#D4AF37]/30">
-            <div class="font-bold text-[#D4AF37] uppercase tracking-wider mb-2">Transit Benchmarks</div>
-            <div class="flex justify-between border-b border-white/10 pb-1"><span>UAE (Jebel Ali):</span> <span class="font-bold">3 - 5 Days</span></div>
-            <div class="flex justify-between border-b border-white/10 pb-1"><span>Oman (Sohar):</span> <span class="font-bold">4 - 6 Days</span></div>
-            <div class="flex justify-between border-b border-white/10 pb-1"><span>Southeast Asia:</span> <span class="font-bold">6 - 9 Days</span></div>
-            <div class="flex justify-between"><span>Europe Main Ports:</span> <span class="font-bold">18 - 25 Days</span></div>
+          <div>
+            <div class="text-2xl sm:text-3xl font-display font-bold text-[#00A6E8]">FCL</div>
+            <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Bulk Container Supply</div>
           </div>
         </div>
       </div>
 
-      <h2 class="text-2xl font-bold text-[#071B33] mb-6">Active Export Development Corridors</h2>
-      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-        <div class="bg-white p-4 rounded-xl border border-slate-200"><div class="font-bold text-sm text-[#071B33]">UAE</div><div class="text-xs text-[#00A6E8]">Jebel Ali Port</div></div>
-        <div class="bg-white p-4 rounded-xl border border-slate-200"><div class="font-bold text-sm text-[#071B33]">Oman</div><div class="text-xs text-[#00A6E8]">Sohar / Muscat</div></div>
-        <div class="bg-white p-4 rounded-xl border border-slate-200"><div class="font-bold text-sm text-[#071B33]">Saudi Arabia</div><div class="text-xs text-[#00A6E8]">Jeddah / Dammam</div></div>
-        <div class="bg-white p-4 rounded-xl border border-slate-200"><div class="font-bold text-sm text-[#071B33]">Qatar</div><div class="text-xs text-[#00A6E8]">Hamad Port</div></div>
-        <div class="bg-white p-4 rounded-xl border border-slate-200"><div class="font-bold text-sm text-[#071B33]">Kuwait</div><div class="text-xs text-[#00A6E8]">Shuwaikh Port</div></div>
-        <div class="bg-white p-4 rounded-xl border border-slate-200"><div class="font-bold text-sm text-[#071B33]">Malaysia</div><div class="text-xs text-[#00A6E8]">Port Klang</div></div>
-        <div class="bg-white p-4 rounded-xl border border-slate-200"><div class="font-bold text-sm text-[#071B33]">Indonesia</div><div class="text-xs text-[#00A6E8]">Tanjung Priok</div></div>
-        <div class="bg-white p-4 rounded-xl border border-slate-200"><div class="font-bold text-sm text-[#071B33]">Bangladesh</div><div class="text-xs text-[#00A6E8]">Chittagong</div></div>
-        <div class="bg-white p-4 rounded-xl border border-slate-200"><div class="font-bold text-sm text-[#071B33]">Africa</div><div class="text-xs text-[#00A6E8]">East & West Hubs</div></div>
-        <div class="bg-white p-4 rounded-xl border border-slate-200"><div class="font-bold text-sm text-[#071B33]">Europe</div><div class="text-xs text-[#00A6E8]">Rotterdam / Hamburg</div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================================================= -->
-  <!-- 9. CONTACT US & RFQ PAGE SECTION -->
-  <!-- ========================================================================= -->
-  <section id="section-contact" class="page-section">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <div class="max-w-3xl mb-12">
-        <span class="text-[#00A6E8] font-bold text-xs uppercase tracking-widest bg-sky-50 px-3 py-1 rounded">Direct Buyer Desk</span>
-        <h1 class="text-3xl sm:text-5xl font-black text-[#071B33] tracking-tight mt-3">Contact Us & Request Official Quotation (RFQ)</h1>
-        <p class="text-slate-600 text-sm sm:text-base mt-3 leading-relaxed">
-          Connect directly with Mr. Kunal Rathod and our international export division for container pricing, custom packaging proposals, and sample requests.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-        <!-- Live RFQ Form -->
-        <div class="lg:col-span-7 bg-white p-8 sm:p-10 rounded-2xl border border-slate-200 shadow-md">
-          <h2 class="text-xl font-bold text-[#071B33] mb-6 flex items-center gap-2">
-            <i class="fa-solid fa-file-pen text-[#00A6E8]"></i> International Buyer RFQ Form
-          </h2>
-
-          <form id="contact-rfq-form" onsubmit="handleContactFormSubmit(event)" class="space-y-4">
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Full Name *</label>
-                <input type="text" id="c-name" required placeholder="e.g. John Smith / Abdullah" class="w-full text-xs p-3 rounded-lg border border-slate-300 focus:outline-none focus:border-[#00A6E8] bg-slate-50">
-              </div>
-              <div>
-                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Company Name *</label>
-                <input type="text" id="c-company" required placeholder="e.g. Al-Barakah Foods LLC" class="w-full text-xs p-3 rounded-lg border border-slate-300 focus:outline-none focus:border-[#00A6E8] bg-slate-50">
-              </div>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Buyer Country *</label>
-                <input type="text" id="c-country" required placeholder="e.g. UAE / Saudi / Malaysia" class="w-full text-xs p-3 rounded-lg border border-slate-300 focus:outline-none focus:border-[#00A6E8] bg-slate-50">
-              </div>
-              <div>
-                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Corporate Email *</label>
-                <input type="email" id="c-email" required placeholder="purchasing@company.com" class="w-full text-xs p-3 rounded-lg border border-slate-300 focus:outline-none focus:border-[#00A6E8] bg-slate-50">
-              </div>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">WhatsApp / Phone *</label>
-                <input type="text" id="c-phone" required placeholder="+971 50 123 4567" class="w-full text-xs p-3 rounded-lg border border-slate-300 focus:outline-none focus:border-[#00A6E8] bg-slate-50">
-              </div>
-              <div>
-                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Product Interested In *</label>
-                <select id="c-product" required class="w-full text-xs p-3 rounded-lg border border-slate-300 focus:outline-none focus:border-[#00A6E8] bg-slate-50">
-                  <option value="">Select a Spice Product...</option>
-                  <option value="Turmeric Finger">Turmeric Finger (Whole)</option>
-                  <option value="Turmeric Powder">Turmeric Powder (Ground)</option>
-                  <option value="Dry Red Chilli">Dry Red Chilli (With Stem / Stemless)</option>
-                  <option value="Red Chilli Powder">Red Chilli Powder</option>
-                  <option value="Cumin Seeds">Cumin Seeds (99.5% Sortex)</option>
-                  <option value="Cumin Powder">Cumin Powder</option>
-                  <option value="Coriander Seeds">Coriander Seeds</option>
-                  <option value="Coriander Powder">Coriander Powder</option>
-                  <option value="Black Pepper">Black Pepper (500GL - 570GL)</option>
-                  <option value="Green Cardamom">Green Cardamom (6mm - 8mm+)</option>
-                  <option value="Black Cardamom">Black Cardamom</option>
-                  <option value="Dry Ginger">Dry Ginger (Sunth)</option>
-                  <option value="Garam Masala">Garam Masala Blend</option>
-                  <option value="Custom OEM Blends">Customized Private Label Blend</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-              <div>
-                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Quantity (MT / FCL) *</label>
-                <input type="text" id="c-qty" required placeholder="e.g. 1 x 20ft FCL (15 MT)" class="w-full text-xs p-3 rounded-lg border border-slate-300 focus:outline-none focus:border-[#00A6E8] bg-slate-50">
-              </div>
-              <div>
-                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Destination Port *</label>
-                <input type="text" id="c-port" required placeholder="e.g. Jebel Ali / Sohar" class="w-full text-xs p-3 rounded-lg border border-slate-300 focus:outline-none focus:border-[#00A6E8] bg-slate-50">
-              </div>
-              <div>
-                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Incoterm *</label>
-                <select id="c-incoterm" class="w-full text-xs p-3 rounded-lg border border-slate-300 focus:outline-none focus:border-[#00A6E8] bg-slate-50">
-                  <option value="FOB">FOB (Nhava Sheva)</option>
-                  <option value="CIF">CIF (Destination Port)</option>
-                  <option value="CFR">CFR (Destination)</option>
-                  <option value="EXW">EXW (Ambad Works)</option>
-                </select>
-              </div>
-            </div>
-
-            <div>
-              <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Detailed Specifications / Packaging Needs</label>
-              <textarea id="c-msg" rows="3" placeholder="Specify packaging type (PP bags, Kraft, retail pouches), desired moisture limits or timeline..." class="w-full text-xs p-3 rounded-lg border border-slate-300 focus:outline-none focus:border-[#00A6E8] bg-slate-50"></textarea>
-            </div>
-
-            <div class="pt-2 flex flex-col sm:flex-row gap-3">
-              <button type="submit" class="flex-1 bg-[#071B33] hover:bg-[#00A6E8] text-white py-3 rounded-lg font-bold text-xs uppercase tracking-wider transition-colors shadow-md flex items-center justify-center gap-2">
-                <i class="fa-solid fa-paper-plane text-[#D4AF37]"></i> Submit RFQ to Export Desk
-              </button>
-              <button type="button" onclick="sendFormToWhatsApp()" class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-lg font-bold text-xs uppercase tracking-wider transition-colors flex items-center justify-center gap-2">
-                <i class="fa-brands fa-whatsapp text-lg"></i> Send via WhatsApp
-              </button>
-            </div>
-          </form>
-
-          <div id="contact-success-msg" class="hidden p-6 mt-4 bg-emerald-50 border border-emerald-300 rounded-xl text-center space-y-2">
-            <i class="fa-solid fa-circle-check text-emerald-600 text-3xl"></i>
-            <h4 class="font-bold text-emerald-800 text-base">Quotation Inquiry Submitted Successfully</h4>
-            <p class="text-xs text-emerald-700">Thank you. Mr. Kunal Rathod and our export team have received your quotation request.</p>
-          </div>
-        </div>
-
-        <!-- Contact Credentials -->
-        <div class="lg:col-span-5 space-y-6">
-          <div class="bg-[#071B33] text-white p-8 rounded-2xl border border-[#D4AF37]/30 shadow-lg space-y-4 text-xs">
-            <span class="text-[#D4AF37] text-[10px] font-bold uppercase tracking-widest">Corporate Headquarters</span>
-            <h3 class="text-xl font-bold text-white">KSR INTERNATIONAL TRADE MANUFACTURING</h3>
-            <p class="text-slate-300 leading-relaxed">Manufacturer, processor, and exporter of authentic Indian spices.</p>
-            <div class="space-y-3 pt-2">
-              <div class="flex items-start gap-3">
-                <i class="fa-solid fa-location-dot text-[#00A6E8] mt-1 text-sm"></i>
-                <div>
-                  <span class="text-slate-400 block font-semibold">Manufacturing Base:</span>
-                  <span id="contact-info-address" class="text-white font-medium">Ambad, Jalna, Maharashtra, India</span>
-                </div>
-              </div>
-              <div class="flex items-start gap-3">
-                <i class="fa-solid fa-user-tie text-[#D4AF37] mt-1 text-sm"></i>
-                <div>
-                  <span class="text-slate-400 block font-semibold">Founder & Managing Director:</span>
-                  <span class="text-white font-medium">Mr. Kunal Rathod</span>
-                </div>
-              </div>
-              <div class="flex items-start gap-3">
-                <i class="fa-solid fa-envelope text-[#00A6E8] mt-1 text-sm"></i>
-                <div>
-                  <span class="text-slate-400 block font-semibold">Executive Email:</span>
-                  <a id="contact-info-email" href="mailto:ceo@ksrspicesmfgin.in" class="text-white font-medium hover:text-[#00A6E8]">ceo@ksrspicesmfgin.in</a>
-                </div>
-              </div>
-              <div class="flex items-start gap-3">
-                <i class="fa-brands fa-whatsapp text-[#D4AF37] mt-1 text-sm"></i>
-                <div>
-                  <span class="text-slate-400 block font-semibold">WhatsApp Desk:</span>
-                  <a id="contact-info-phone" href="https://wa.me/919028310547" target="_blank" class="text-white font-medium hover:text-[#D4AF37]">+91 9028310547</a>
-                </div>
-              </div>
-            </div>
-            <div class="pt-4 border-t border-white/10">
-              <a href="https://www.linkedin.com/in/mr-kunal-rathod/" target="_blank" class="text-[#00A6E8] hover:underline font-semibold flex items-center gap-1.5">
-                <i class="fa-brands fa-linkedin"></i> Connect with Kunal Rathod on LinkedIn
-              </a>
-            </div>
+      <!-- Hero Visual Card -->
+      <div class="lg:col-span-5 relative">
+        <div class="relative mx-auto max-w-md rounded-2xl overflow-hidden border-2 border-[#D4AF37]/50 shadow-2xl bg-[#041021] p-3">
+          <img src="KSR%20MFG%20LOGO.png" alt="KSR Manufacturing" class="w-full h-80 object-contain rounded-xl bg-[#071B33] p-4" onerror="this.onerror=null; this.src='KSR MFG  LOGO_2.jpg';">
+          <div class="p-5 text-center bg-gradient-to-t from-[#041021] to-[#071B33] rounded-xl mt-3">
+            <span class="text-xs font-semibold text-[#D4AF37] uppercase tracking-widest">Manufacturing & Processing Facility</span>
+            <h4 class="text-white font-display font-bold text-lg mt-1">Ambad, Jalna, Maharashtra, India</h4>
+            <p class="text-xs text-slate-300 mt-2">Equipped for grading, cleaning, sorting, grinding, and export container stuffing.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========================================================================= -->
-  <!-- GLOBAL FOOTER -->
-  <!-- ========================================================================= -->
-  <footer class="bg-[#071B33] text-white border-t border-white/10 pt-16 pb-10 mt-auto">
+  <!-- FOUNDER & LEADERSHIP PROFILE (MR. KUNAL RATHOD) -->
+  <section id="founder" class="py-24 bg-white border-b border-slate-200 relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-white/10 text-xs">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold text-[#D4AF37] uppercase tracking-[0.2em]">Executive Leadership</span>
+        <h2 class="text-3xl sm:text-4xl font-display font-bold text-[#071B33] mt-2">
+          Leadership Built on Vision, Commitment & Trust
+        </h2>
+        <div class="w-20 h-1 bg-[#D4AF37] mx-auto mt-4"></div>
+        <p class="text-slate-600 mt-4 text-sm sm:text-base">
+          Meet the Founder & Managing Director behind KSR International Trade Manufacturing.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <!-- Founder Portrait Column -->
+        <div class="lg:col-span-5 flex flex-col items-center">
+          <div class="relative group">
+            <div class="absolute -inset-2 bg-gradient-to-r from-[#D4AF37] to-[#00A6E8] rounded-2xl blur-lg opacity-40 group-hover:opacity-75 transition duration-500"></div>
+            <div class="relative w-72 sm:w-80 h-96 rounded-2xl overflow-hidden border-4 border-white shadow-2xl bg-[#071B33]">
+              <img src="Kunal%20Gem%202.png" alt="Mr. Kunal Rathod - Founder & Managing Director" class="w-full h-full object-cover object-top" onerror="this.onerror=null; this.src='KSR%20MFG%20LOGO.png';">
+            </div>
+          </div>
+          
+          <div class="text-center mt-6">
+            <h3 class="text-2xl font-display font-bold text-[#071B33]">Mr. Kunal Rathod</h3>
+            <p class="text-sm font-semibold text-[#00A6E8] uppercase tracking-wider mt-1">Founder & Managing Director</p>
+            <p class="text-xs text-slate-500 mt-0.5">KSR International Trade Manufacturing</p>
+            
+            <div class="flex items-center justify-center gap-3 mt-4">
+              <a href="https://www.linkedin.com/in/mr-kunal-rathod/" target="_blank" class="w-9 h-9 rounded-full bg-[#071B33] text-white flex items-center justify-center hover:bg-[#00A6E8] transition shadow">
+                <i class="fa-brands fa-linkedin-in text-sm"></i>
+              </a>
+              <a href="https://wa.me/919028310547" target="_blank" class="w-9 h-9 rounded-full bg-emerald-600 text-white flex items-center justify-center hover:bg-emerald-700 transition shadow">
+                <i class="fa-brands fa-whatsapp text-sm"></i>
+              </a>
+              <a href="mailto:ceo@ksrspicesmfgin.in" class="w-9 h-9 rounded-full bg-[#D4AF37] text-[#071B33] flex items-center justify-center hover:bg-amber-400 transition shadow">
+                <i class="fa-solid fa-envelope text-sm"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Founder Official Message Column -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="bg-[#F5F8FA] p-8 sm:p-10 rounded-2xl border border-slate-200 relative shadow-sm">
+            <i class="fa-solid fa-quote-left text-4xl text-[#D4AF37]/30 absolute top-6 right-8"></i>
+            <span class="text-xs font-bold text-[#00A6E8] uppercase tracking-widest block mb-2">A Message from Our Founder</span>
+            <h4 class="text-xl font-display font-bold text-[#071B33] mb-4">Dedicated to Long-Term Global Partnerships</h4>
+            <div class="space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed">
+              <p>
+                "At KSR INTERNATIONAL TRADE MANUFACTURING, our vision is to build a trusted Indian spice manufacturing and export company that delivers quality, consistency and value to international buyers."
+              </p>
+              <p>
+                "Our journey is driven by a strong commitment to understanding global market requirements, developing reliable supply relationships and maintaining a customer-focused approach."
+              </p>
+              <p>
+                "We believe that long-term business partnerships are built through transparency, product quality, professional communication and consistent performance. As we continue to grow, our focus remains on strengthening our manufacturing capabilities and connecting Indian spice expertise with global markets."
+              </p>
+            </div>
+            
+            <div class="mt-6 pt-6 border-t border-slate-300 flex items-center justify-between">
+              <div>
+                <p class="font-display font-bold text-[#071B33] text-base">Mr. Kunal Rathod</p>
+                <p class="text-xs text-slate-500 font-medium">Managing Director / Founder</p>
+              </div>
+              <span class="text-xs font-semibold text-[#D4AF37] px-3 py-1 bg-amber-50 rounded-full border border-amber-200">
+                Maharashtra, India
+              </span>
+            </div>
+          </div>
+
+          <!-- Leadership Highlights Grid -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-2">
+            <div class="p-4 bg-white rounded-xl border border-slate-200 shadow-sm text-center">
+              <div class="text-[#D4AF37] text-xl mb-1"><i class="fa-solid fa-briefcase"></i></div>
+              <div class="font-bold text-xs uppercase text-slate-500">Experience</div>
+              <div class="font-bold text-sm text-[#071B33] mt-0.5">7+ Years Exim</div>
+            </div>
+            <div class="p-4 bg-white rounded-xl border border-slate-200 shadow-sm text-center">
+              <div class="text-[#00A6E8] text-xl mb-1"><i class="fa-solid fa-industry"></i></div>
+              <div class="font-bold text-xs uppercase text-slate-500">Core Focus</div>
+              <div class="font-bold text-sm text-[#071B33] mt-0.5">Direct Processing</div>
+            </div>
+            <div class="p-4 bg-white rounded-xl border border-slate-200 shadow-sm text-center col-span-2 sm:col-span-1">
+              <div class="text-emerald-600 text-xl mb-1"><i class="fa-solid fa-handshake"></i></div>
+              <div class="font-bold text-xs uppercase text-slate-500">Approach</div>
+              <div class="font-bold text-sm text-[#071B33] mt-0.5">Direct Buyer Care</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS CATALOG SECTION -->
+  <section id="products" class="py-24 bg-[#F5F8FA]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+          <span class="text-xs font-bold text-[#00A6E8] uppercase tracking-[0.2em]">Wholesale & Export Portfolio</span>
+          <h2 class="text-3xl sm:text-4xl font-display font-bold text-[#071B33] mt-1">Our Product Portfolio</h2>
+          <p class="text-slate-600 text-sm mt-2">Available for container bulk shipments, OEM private labelling, and food service processors.</p>
+        </div>
+        <div class="mt-6 md:mt-0 flex gap-2">
+          <button onclick="filterCategory('all')" id="tab-all" class="px-4 py-2 text-xs font-bold rounded-lg bg-[#071B33] text-white transition">All Spices</button>
+          <button onclick="filterCategory('whole')" id="tab-whole" class="px-4 py-2 text-xs font-bold rounded-lg bg-white text-slate-700 hover:bg-slate-100 transition">Whole Spices</button>
+          <button onclick="filterCategory('powder')" id="tab-powder" class="px-4 py-2 text-xs font-bold rounded-lg bg-white text-slate-700 hover:bg-slate-100 transition">Spice Powders</button>
+          <button onclick="filterCategory('blends')" id="tab-blends" class="px-4 py-2 text-xs font-bold rounded-lg bg-white text-slate-700 hover:bg-slate-100 transition">Blends</button>
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6" id="products-container">
+        <!-- Javascript dynamically injects the 14 products here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT & RFQ SECTION -->
+  <section id="contact" class="py-24 bg-[#071B33] text-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12">
         
-        <div class="lg:col-span-4 space-y-4">
-          <div class="flex items-center gap-3">
-            <div class="w-12 h-12 rounded-full overflow-hidden border border-[#D4AF37] bg-white p-0.5 shrink-0">
-              <img src="KSR MFG  LOGO_2.jpg" alt="KSR Logo" onerror="this.src='KSR MFG  LOGO.jpg'" class="w-full h-full object-cover rounded-full">
+        <div class="lg:col-span-5 space-y-6">
+          <span class="text-xs font-bold text-[#D4AF37] uppercase tracking-[0.2em]">Direct Export Desk</span>
+          <h2 class="text-3xl sm:text-4xl font-display font-bold leading-tight">
+            Connect with KSR Export Team
+          </h2>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Get instant commercial price quotations, specification sheets, and sample dispatch details for your target port.
+          </p>
+
+          <div class="space-y-4 pt-4">
+            <div class="flex items-start gap-4 p-4 rounded-xl bg-[#041021] border border-slate-800">
+              <i class="fa-solid fa-location-dot text-[#00A6E8] text-lg mt-1"></i>
+              <div>
+                <h5 class="text-xs font-bold uppercase tracking-wider text-slate-400">Processing Facility</h5>
+                <p class="text-sm font-medium text-slate-200 mt-0.5">Ambad, Jalna, Maharashtra - 431205, India</p>
+              </div>
             </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-xl bg-[#041021] border border-slate-800">
+              <i class="fa-solid fa-envelope text-[#D4AF37] text-lg mt-1"></i>
+              <div>
+                <h5 class="text-xs font-bold uppercase tracking-wider text-slate-400">Official Inquiries</h5>
+                <p class="text-sm font-medium text-slate-200 mt-0.5">ceo@ksrspicesmfgin.in</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-xl bg-[#041021] border border-slate-800">
+              <i class="fa-brands fa-whatsapp text-emerald-400 text-lg mt-1"></i>
+              <div>
+                <h5 class="text-xs font-bold uppercase tracking-wider text-slate-400">Direct WhatsApp Desk</h5>
+                <p class="text-sm font-medium text-slate-200 mt-0.5">+91 9028310547</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RFQ Form -->
+        <div class="lg:col-span-7 bg-[#041021] p-8 sm:p-10 rounded-2xl border border-slate-800 shadow-xl">
+          <h3 class="text-xl font-display font-bold text-white mb-2">Request an International Export Quotation</h3>
+          <p class="text-xs text-slate-400 mb-6">Fill in your container requirements to receive CIF / FOB rates within 24 hours.</p>
+
+          <form onsubmit="handleFormSubmit(event)" class="space-y-4">
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">Full Name</label>
+                <input type="text" required placeholder="John Doe" class="w-full bg-[#071B33] border border-slate-700 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-[#00A6E8]">
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">Company Name</label>
+                <input type="text" required placeholder="Global Foods LLC" class="w-full bg-[#071B33] border border-slate-700 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-[#00A6E8]">
+              </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">Business Email</label>
+                <input type="email" required placeholder="procurement@company.com" class="w-full bg-[#071B33] border border-slate-700 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-[#00A6E8]">
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">WhatsApp / Phone</label>
+                <input type="tel" required placeholder="+971 50 123 4567" class="w-full bg-[#071B33] border border-slate-700 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-[#00A6E8]">
+              </div>
+            </div>
+
+            <div class="grid sm:grid-cols-3 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">Spice Product</label>
+                <select id="rfq-product" class="w-full bg-[#071B33] border border-slate-700 rounded-lg px-3 py-2.5 text-sm text-white focus:outline-none focus:border-[#00A6E8]">
+                  <option value="Turmeric Finger">Turmeric Finger</option>
+                  <option value="Dry Red Chilli">Dry Red Chilli</option>
+                  <option value="Cumin Seeds">Cumin Seeds</option>
+                  <option value="Turmeric Powder">Turmeric Powder</option>
+                  <option value="Red Chilli Powder">Red Chilli Powder</option>
+                  <option value="Black Pepper">Black Pepper</option>
+                  <option value="Custom Blend">Customized Blend / OEM</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">Quantity</label>
+                <input type="text" required placeholder="e.g. 1x20ft FCL" class="w-full bg-[#071B33] border border-slate-700 rounded-lg px-3 py-2.5 text-sm text-white focus:outline-none focus:border-[#00A6E8]">
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">Incoterm</label>
+                <select class="w-full bg-[#071B33] border border-slate-700 rounded-lg px-3 py-2.5 text-sm text-white focus:outline-none focus:border-[#00A6E8]">
+                  <option value="FOB">FOB Nhava Sheva</option>
+                  <option value="CIF">CIF Target Port</option>
+                  <option value="CFR">CFR</option>
+                  <option value="EXW">EXW Facility</option>
+                </select>
+              </div>
+            </div>
+
             <div>
-              <div class="font-extrabold text-white text-base tracking-tight leading-tight">KSR INTERNATIONAL</div>
-              <div class="text-[10px] tracking-widest uppercase font-semibold text-[#00A6E8]">Trade Manufacturing</div>
+              <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">Destination Port & Requirements</label>
+              <textarea rows="3" placeholder="Destination port (e.g. Jebel Ali / Chittagong) and packaging preferences..." class="w-full bg-[#071B33] border border-slate-700 rounded-lg px-4 py-2 text-sm text-white focus:outline-none focus:border-[#00A6E8]"></textarea>
             </div>
-          </div>
-          <p class="text-slate-400 leading-relaxed">
-            Indian spice manufacturing, processing and export enterprise delivering authentic quality, consistency and long-term supply partnerships worldwide.
-          </p>
-          <div class="text-slate-300">
-            <div class="font-bold text-white">Founder & Managing Director:</div>
-            <div>Mr. Kunal Rathod (7+ Years Industry Experience)</div>
-          </div>
-        </div>
 
-        <div class="lg:col-span-2 space-y-3">
-          <div class="text-xs font-bold uppercase tracking-widest text-[#D4AF37]">Quick Links</div>
-          <ul class="space-y-2 text-slate-300">
-            <li><button onclick="switchPage('home')" class="hover:text-[#00A6E8]">Home</button></li>
-            <li><button onclick="switchPage('about')" class="hover:text-[#00A6E8]">About Us</button></li>
-            <li><button onclick="switchPage('leadership')" class="hover:text-[#00A6E8] text-[#D4AF37]">Founder Profile</button></li>
-            <li><button onclick="switchPage('products')" class="hover:text-[#00A6E8]">Spice Products</button></li>
-            <li><button onclick="switchPage('manufacturing')" class="hover:text-[#00A6E8]">Manufacturing</button></li>
-            <li><button onclick="switchPage('quality')" class="hover:text-[#00A6E8]">Quality & Facility</button></li>
-            <li><button onclick="switchPage('why-us')" class="hover:text-[#00A6E8]">Why Choose KSR</button></li>
-            <li><button onclick="switchPage('contact')" class="hover:text-[#00A6E8]">Contact Us & RFQ</button></li>
-          </ul>
-        </div>
-
-        <div class="lg:col-span-3 space-y-3">
-          <div class="text-xs font-bold uppercase tracking-widest text-[#D4AF37]">Product Portfolio</div>
-          <ul class="space-y-1.5 text-slate-300">
-            <li>• Turmeric Finger & Powder</li>
-            <li>• Dry Red Chilli & Powder</li>
-            <li>• Cumin Seeds & Cumin Powder</li>
-            <li>• Coriander Seeds & Powder</li>
-            <li>• Black Pepper & Green Cardamom</li>
-            <li>• Black Cardamom & Dry Ginger</li>
-            <li>• Garam Masala & Custom OEM Blends</li>
-          </ul>
-        </div>
-
-        <div class="lg:col-span-3 space-y-3 text-slate-300">
-          <div class="text-xs font-bold uppercase tracking-widest text-[#D4AF37]">Export Logistics Desk</div>
-          <p class="leading-relaxed">
-            <strong>Base:</strong> Ambad, Jalna, Maharashtra, India<br>
-            <strong>Sea Port:</strong> JNPT / Nhava Sheva (Mumbai)<br>
-            <strong>Email:</strong> <span id="footer-email">ceo@ksrspicesmfgin.in</span><br>
-            <strong>WhatsApp:</strong> <span id="footer-phone">+91 9028310547</span>
-          </p>
-          <div class="pt-2 flex flex-col gap-2">
-            <button onclick="openRfqModal()" class="bg-[#00A6E8] hover:bg-sky-500 text-white py-2 rounded-lg text-xs font-bold tracking-wider uppercase transition-colors">
-              Request Fast RFQ
+            <button type="submit" class="w-full py-3.5 rounded-lg bg-gradient-to-r from-[#D4AF37] to-[#B38F26] text-[#071B33] font-bold text-sm uppercase tracking-wider hover:opacity-95 shadow-lg transition">
+              Submit Export Enquiry
             </button>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
-        <div>© 2026 KSR INTERNATIONAL TRADE MANUFACTURING. All Rights Reserved.</div>
-        <div class="flex items-center gap-6">
-          <a href="https://ksrspicesmfgin.in/" target="_blank" class="hover:text-white transition-colors">ksrspicesmfgin.in</a>
+          </form>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#041021] border-t border-slate-800 text-slate-400 text-xs py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-6">
+      <div class="flex items-center gap-3">
+        <img src="KSR%20MFG%20LOGO.png" alt="KSR Logo" class="w-10 h-10 object-contain rounded-full border border-[#D4AF37]" onerror="this.onerror=null; this.src='KSR MFG  LOGO_2.jpg';">
+        <span class="font-display text-white font-bold tracking-wider">KSR INTERNATIONAL TRADE MANUFACTURING</span>
+      </div>
+      <p>© 2026 KSR International Trade Manufacturing. All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- FLOATING WHATSAPP BUTTON -->
-  <div class="fixed bottom-6 right-6 z-40">
-    <button onclick="openWhatsAppQuote()" class="bg-emerald-600 hover:bg-emerald-500 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-all border-2 border-white" title="Direct WhatsApp with Founder Kunal Rathod">
-      <i class="fa-brands fa-whatsapp text-2xl"></i>
-    </button>
-  </div>
-
-  <!-- ========================================================================= -->
-  <!-- MODAL: DYNAMIC BULK RFQ / QUOTE -->
-  <!-- ========================================================================= -->
-  <div id="rfq-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
-    <div class="bg-white rounded-2xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-slate-200 relative max-h-[90vh] overflow-y-auto">
-      <button onclick="closeRfqModal()" class="absolute top-4 right-4 p-2 text-slate-400 hover:text-slate-700">
-        <i class="fa-solid fa-xmark text-lg"></i>
-      </button>
-
-      <div class="mb-5">
-        <span class="text-[#00A6E8] text-xs font-bold uppercase tracking-wider">Fast Commercial Inquiry</span>
-        <h3 id="modal-rfq-title" class="text-xl font-bold text-[#071B33]">Request Official Export Quotation</h3>
-        <p class="text-xs text-slate-500 mt-1">Direct inquiry desk for international buyers. Origin: Maharashtra, India (FOB / CIF).</p>
-      </div>
-
-      <form onsubmit="handleModalRfqSubmit(event)" class="space-y-3 text-xs">
-        <div>
-          <label class="block font-bold text-slate-700 uppercase mb-1">Company / Buyer Name *</label>
-          <input type="text" id="m-name" required placeholder="Company or Buyer Name" class="w-full p-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-[#00A6E8]">
-        </div>
-        <div class="grid grid-cols-2 gap-3">
-          <div>
-            <label class="block font-bold text-slate-700 uppercase mb-1">Country *</label>
-            <input type="text" id="m-country" required placeholder="e.g. UAE / Malaysia" class="w-full p-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-[#00A6E8]">
-          </div>
-          <div>
-            <label class="block font-bold text-slate-700 uppercase mb-1">WhatsApp / Phone *</label>
-            <input type="text" id="m-phone" required placeholder="+971 50 123 4567" class="w-full p-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-[#00A6E8]">
-          </div>
-        </div>
-        <div class="grid grid-cols-2 gap-3">
-          <div>
-            <label class="block font-bold text-slate-700 uppercase mb-1">Product *</label>
-            <input type="text" id="m-product" required placeholder="Product Name" class="w-full p-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-[#00A6E8]">
-          </div>
-          <div>
-            <label class="block font-bold text-slate-700 uppercase mb-1">Quantity (MT) *</label>
-            <input type="text" id="m-qty" required placeholder="e.g. 15 MT / FCL" class="w-full p-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-[#00A6E8]">
-          </div>
-        </div>
-        <div class="pt-3 flex gap-2">
-          <button type="submit" class="flex-1 bg-[#071B33] hover:bg-[#00A6E8] text-white py-2.5 rounded-lg font-bold uppercase tracking-wider transition-colors">
-            Submit Quotation
-          </button>
-          <button type="button" onclick="sendModalToWhatsApp()" class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2.5 rounded-lg font-bold uppercase transition-colors flex items-center gap-1.5">
-            <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp
-          </button>
-        </div>
-      </form>
-      <div id="modal-success-msg" class="hidden mt-3 p-3 bg-emerald-50 text-emerald-800 rounded-lg text-center text-xs font-bold">
-        Quotation submitted successfully!
-      </div>
-    </div>
-  </div>
-
-  <!-- ========================================================================= -->
-  <!-- MODAL: REQUEST A SAMPLE (DHL / FEDEX) -->
-  <!-- ========================================================================= -->
-  <div id="sample-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
-    <div class="bg-white rounded-2xl max-w-md w-full p-6 sm:p-8 shadow-2xl border border-slate-200 relative">
-      <button onclick="closeSampleModal()" class="absolute top-4 right-4 p-2 text-slate-400 hover:text-slate-700">
-        <i class="fa-solid fa-xmark text-lg"></i>
-      </button>
-      <div class="w-12 h-12 rounded-full bg-amber-50 text-[#D4AF37] flex items-center justify-center text-xl mb-3">
-        <i class="fa-solid fa-box-open"></i>
-      </div>
-      <h3 class="text-lg font-bold text-[#071B33]">Request Commercial Test Sample</h3>
-      <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-        Pre-shipment approval and lab evaluation samples are dispatched via international express couriers (DHL / FedEx) for verified corporate buyers.
-      </p>
-      <div class="my-4 p-3.5 bg-slate-50 border border-slate-200 rounded-lg text-xs space-y-1 text-slate-700">
-        <div>• Verified buyer entity registration.</div>
-        <div>• Consignee DHL/FedEx account or agreed courier freight.</div>
-      </div>
-      <div class="space-y-2 pt-2">
-        <button onclick="openWhatsAppQuote('Hello Mr. Kunal, I would like to request product evaluation samples via DHL/FedEx.')" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-colors flex items-center justify-center gap-2">
-          <i class="fa-brands fa-whatsapp text-sm"></i> Request Sample on WhatsApp
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <!-- ========================================================================= -->
-  <!-- LIVE ADMIN CONTROL PANEL (CMS MODAL) -->
-  <!-- ========================================================================= -->
-  <div id="admin-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-sm">
-    <div class="bg-white rounded-2xl max-w-2xl w-full p-6 sm:p-8 shadow-2xl border border-slate-200 relative max-h-[90vh] overflow-y-auto">
-      <button onclick="closeAdminModal()" class="absolute top-4 right-4 p-2 text-slate-400 hover:text-slate-700">
-        <i class="fa-solid fa-xmark text-lg"></i>
-      </button>
-
-      <!-- Step 1: Login Lock -->
-      <div id="admin-login-view" class="text-center py-6">
-        <div class="w-14 h-14 rounded-full bg-slate-100 text-[#071B33] flex items-center justify-center text-2xl mx-auto mb-3">
-          <i class="fa-solid fa-lock"></i>
-        </div>
-        <h3 class="text-xl font-bold text-[#071B33]">KSR Live Control Panel</h3>
-        <p class="text-xs text-slate-500 mt-1 max-w-sm mx-auto">Enter your master admin PIN to edit website content directly without editing code.</p>
-        <div class="max-w-xs mx-auto mt-5 space-y-3">
-          <input type="password" id="admin-pin-input" placeholder="Enter PIN (Default: 9028)" class="w-full p-3 rounded-lg border border-slate-300 text-center text-sm font-bold tracking-widest focus:outline-none focus:border-[#00A6E8]">
-          <button onclick="authenticateAdmin()" class="w-full bg-[#071B33] hover:bg-[#00A6E8] text-white py-3 rounded-lg text-xs font-bold uppercase tracking-wider transition-colors">
-            Unlock Control Panel
-          </button>
-          <div id="admin-pin-error" class="hidden text-xs text-red-600 font-semibold">Incorrect PIN! Default is 9028</div>
-        </div>
-      </div>
-
-      <!-- Step 2: Live CMS Editor -->
-      <div id="admin-dashboard-view" class="hidden space-y-5">
-        <div class="flex items-center justify-between pb-3 border-b border-slate-200">
-          <div>
-            <h3 class="text-lg font-bold text-[#071B33] flex items-center gap-2">
-              <i class="fa-solid fa-sliders text-[#00A6E8]"></i> Website Live CMS
-            </h3>
-            <p class="text-xs text-slate-500">Edit fields below and click "Save & Apply Changes". Your website updates instantly!</p>
-          </div>
-          <button onclick="logoutAdmin()" class="text-xs text-red-600 hover:underline font-bold">Logout</button>
-        </div>
-
-        <form onsubmit="saveCmsSettings(event)" class="space-y-4 text-xs">
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div>
-              <label class="block font-bold text-slate-700 uppercase mb-1">WhatsApp Number</label>
-              <input type="text" id="cms-phone" class="w-full p-2.5 rounded border border-slate-300 focus:outline-none focus:border-[#00A6E8]">
-            </div>
-            <div>
-              <label class="block font-bold text-slate-700 uppercase mb-1">Official Email</label>
-              <input type="email" id="cms-email" class="w-full p-2.5 rounded border border-slate-300 focus:outline-none focus:border-[#00A6E8]">
-            </div>
-          </div>
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div>
-              <label class="block font-bold text-slate-700 uppercase mb-1">Company Location</label>
-              <input type="text" id="cms-location" class="w-full p-2.5 rounded border border-slate-300 focus:outline-none focus:border-[#00A6E8]">
-            </div>
-            <div>
-              <label class="block font-bold text-slate-700 uppercase mb-1">Experience Text</label>
-              <input type="text" id="cms-exp" class="w-full p-2.5 rounded border border-slate-300 focus:outline-none focus:border-[#00A6E8]">
-            </div>
-          </div>
-
-          <div>
-            <label class="block font-bold text-slate-700 uppercase mb-1">Hero Section Headline</label>
-            <input type="text" id="cms-headline" class="w-full p-2.5 rounded border border-slate-300 focus:outline-none focus:border-[#00A6E8]">
-          </div>
-
-          <div>
-            <label class="block font-bold text-slate-700 uppercase mb-1">Hero Subtitle</label>
-            <textarea id="cms-subtext" rows="2" class="w-full p-2.5 rounded border border-slate-300 focus:outline-none focus:border-[#00A6E8]"></textarea>
-          </div>
-
-          <!-- Product Details Live Editor Section -->
-          <div class="p-4 bg-sky-50 rounded-xl border border-sky-200 space-y-3">
-            <div class="flex items-center justify-between">
-              <span class="font-bold text-[#071B33] text-sm uppercase flex items-center gap-1.5">
-                <i class="fa-solid fa-boxes-stacked text-[#00A6E8]"></i> Product Details Live Editor
-              </span>
-              <span class="text-[10px] text-sky-700 font-semibold">Select spice to customize</span>
-            </div>
-
-            <div>
-              <label class="block font-bold text-slate-700 uppercase mb-1">Select Product to Edit</label>
-              <select id="cms-product-select" onchange="loadProductToCmsForm()" class="w-full p-2.5 rounded border border-sky-300 bg-white font-semibold text-[#071B33] focus:outline-none">
-                <!-- Populated dynamically via JS -->
-              </select>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              <div>
-                <label class="block font-semibold text-slate-700 mb-0.5">Product Name</label>
-                <input type="text" id="cms-prod-name" class="w-full p-2 rounded border border-slate-300 bg-white focus:outline-none focus:border-[#00A6E8]">
-              </div>
-              <div>
-                <label class="block font-semibold text-slate-700 mb-0.5">Origin Region</label>
-                <input type="text" id="cms-prod-origin" class="w-full p-2 rounded border border-slate-300 bg-white focus:outline-none focus:border-[#00A6E8]">
-              </div>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              <div>
-                <label class="block font-semibold text-slate-700 mb-0.5">Available Forms</label>
-                <input type="text" id="cms-prod-forms" class="w-full p-2 rounded border border-slate-300 bg-white focus:outline-none focus:border-[#00A6E8]">
-              </div>
-              <div>
-                <label class="block font-semibold text-slate-700 mb-0.5">Key Physical Feature</label>
-                <input type="text" id="cms-prod-feature" class="w-full p-2 rounded border border-slate-300 bg-white focus:outline-none focus:border-[#00A6E8]">
-              </div>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              <div>
-                <label class="block font-semibold text-slate-700 mb-0.5">Export Packaging</label>
-                <input type="text" id="cms-prod-packaging" class="w-full p-2 rounded border border-slate-300 bg-white focus:outline-none focus:border-[#00A6E8]">
-              </div>
-              <div>
-                <label class="block font-semibold text-slate-700 mb-0.5">Product Image (URL / Path)</label>
-                <input type="text" id="cms-prod-img" class="w-full p-2 rounded border border-slate-300 bg-white focus:outline-none focus:border-[#00A6E8]">
-              </div>
-            </div>
-
-            <div>
-              <label class="block font-semibold text-slate-700 mb-0.5">Short Description</label>
-              <textarea id="cms-prod-desc" rows="2" class="w-full p-2 rounded border border-slate-300 bg-white focus:outline-none focus:border-[#00A6E8]"></textarea>
-            </div>
-
-            <div class="flex justify-end gap-2 pt-1">
-              <button type="button" onclick="saveCurrentProductEdit()" class="bg-[#00A6E8] hover:bg-sky-600 text-white px-4 py-2 rounded font-bold text-xs shadow">
-                <i class="fa-solid fa-check mr-1"></i> Update Selected Product
-              </button>
-            </div>
-            <div id="cms-prod-saved-msg" class="hidden text-[11px] text-emerald-700 font-bold text-right">
-              Product updated successfully!
-            </div>
-          </div>
-
-          <div class="p-3 bg-amber-50 rounded-lg border border-amber-200">
-            <label class="block font-bold text-amber-900 uppercase mb-1">Change Admin PIN</label>
-            <input type="password" id="cms-new-pin" placeholder="Leave blank to keep current PIN" class="w-full p-2 rounded border border-amber-300 focus:outline-none text-xs">
-          </div>
-
-          <div class="pt-2 flex gap-3">
-            <button type="submit" class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white py-3 rounded-lg font-bold uppercase tracking-wider transition-colors shadow">
-              <i class="fa-solid fa-floppy-disk mr-1"></i> Save & Apply Changes Live
-            </button>
-            <button type="button" onclick="resetCmsDefaults()" class="border border-slate-300 hover:bg-slate-100 text-slate-700 px-4 py-3 rounded-lg font-bold uppercase transition-colors">
-              Reset All
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <!-- JAVASCRIPT LOGIC -->
+  <!-- SCRIPT LOGIC -->
   <script>
-    // 14 Core Spice Products Data (Default fallback)
-    const initialProductsData = [
-      {
-        id: 'turmeric-finger', category: 'whole', name: 'Turmeric Finger',
-        scientific: 'Curcuma longa', origin: 'Maharashtra / Nizamabad / Salem',
-        forms: 'Double Polished, Single Polished, Unpolished Bulk',
-        feature: 'Natural High Curcumin content',
-        packaging: '25kg / 50kg PP Bags, Jute Bags with inner liner',
-        desc: 'Selected premium bold turmeric fingers cleaned, sorted, and graded for high curcumin value and vibrant natural yellow colour.',
-        img: 'https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=800&q=80'
-      },
-      {
-        id: 'dry-red-chilli', category: 'whole', name: 'Dry Red Chilli',
-        scientific: 'Capsicum annuum', origin: 'Guntur / Byadgi / Teja varieties',
-        forms: 'With Stem, Stemless, Crushed Flakes',
-        feature: 'High SHU & Natural ASTA Colour',
-        packaging: '5kg, 10kg, 25kg Gunny Bags, Carton boxes',
-        desc: 'Sun-dried high pungency and deep red colour chillies, graded to eliminate foreign matter and unripe pods for international processing.',
-        img: 'https://images.unsplash.com/photo-1588252303782-cb80119abd6d?auto=format&fit=crop&w=800&q=80'
-      },
-      {
-        id: 'cumin-seeds', category: 'whole', name: 'Cumin Seeds (Jeera)',
-        scientific: 'Cuminum cyminum', origin: 'Gujarat / Rajasthan Belt',
-        forms: 'Machine Cleaned (99%), Sortex Cleaned (99.5%), Singapore / Europe Quality',
-        feature: 'Aroma: Intense, high volatile oil',
-        packaging: '25kg / 50kg Paper Bags, PP bags with liner',
-        desc: 'Prime sortex-cleaned cumin seeds exhibiting distinct warm aroma, uniform seed geometry, and stringent foreign matter control.',
-        img: 'https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80'
-      },
-      {
-        id: 'coriander-seeds', category: 'whole', name: 'Coriander Seeds (Dhania)',
-        scientific: 'Coriandrum sativum', origin: 'Madhya Pradesh / Rajasthan',
-        forms: 'Whole Greenish Bold, Badami Quality, Eagle / Scooter Quality, Split (Dal)',
-        feature: 'Natural essential oils preserved',
-        packaging: '25kg Multi-layer Kraft bags, PP bags',
-        desc: 'Uniform aromatic coriander seeds with pleasant citrus notes, sun-cured and mechanically cleaned for seasoning and extraction houses.',
-        img: 'https://images.unsplash.com/photo-1509358271058-acd22cc93898?auto=format&fit=crop&w=800&q=80'
-      },
-      {
-        id: 'black-pepper', category: 'whole', name: 'Black Pepper',
-        scientific: 'Piper nigrum', origin: 'Malabar / Tellicherry / South India',
-        forms: '500 GL, 550 GL, 570 GL / Bold Malabar Garbled',
-        feature: 'High Piperine Content',
-        packaging: '25kg / 50kg Valve Paper Bags, PP Bags',
-        desc: 'The "King of Spices", hand-harvested and dried black peppercorns offering bold density, sharp pungency, and clean grading.',
-        img: 'https://images.unsplash.com/photo-1508747703725-719777637510?auto=format&fit=crop&w=800&q=80'
-      },
-      {
-        id: 'green-cardamom', category: 'whole', name: 'Green Cardamom',
-        scientific: 'Elettaria cardamomum', origin: 'Western Ghats / Idukki, Kerala',
-        forms: '6mm-7mm Medium, 7mm-8mm Bold, 8mm+ Jumbo Extra Bold',
-        feature: 'Lush green pod integrity & fragrant seed aroma',
-        packaging: '1kg-5kg Master Poly Cartons, Vacuum packed boxes',
-        desc: 'Premium natural green cardamom pods meticulously graded by diameter. Retains rich camphoraceous sweet aroma and black seeds.',
-        img: 'https://images.unsplash.com/photo-1608686207856-001b95cf60ca?auto=format&fit=crop&w=800&q=80'
-      },
-      {
-        id: 'black-cardamom', category: 'whole', name: 'Black Cardamom (Badi Elaichi)',
-        scientific: 'Amomum subulatum', origin: 'Himalayan Foothills / Sikkim',
-        forms: 'Whole Pods Tail Cut, Jumbo Grade, Standard Garbled',
-        feature: 'Smoky, camphoric bold profile',
-        packaging: '10kg, 25kg Jute bags with poly liner',
-        desc: 'Traditional smoke-cured large cardamom pods, prized for intense savoury depth in culinary seasonings and curry formulations.',
-        img: 'https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&w=800&q=80'
-      },
-      {
-        id: 'dry-ginger', category: 'whole', name: 'Dry Ginger (Sunth)',
-        scientific: 'Zingiber officinale', origin: 'Cochin / Central India',
-        forms: 'Bleached, Unbleached Natural Cochin Quality, Split',
-        feature: 'High Gingerol & Shogaol content',
-        packaging: '25kg / 50kg Jute & PP bags',
-        desc: 'Dehydrated rhizomes harvested at peak maturity. Offers robust pungent warmth, minimal fibrous waste, and clean outer skin.',
-        img: 'https://images.unsplash.com/photo-1615485500704-8e990f9900f7?auto=format&fit=crop&w=800&q=80'
-      },
-      {
-        id: 'turmeric-powder', category: 'powder', name: 'Turmeric Powder',
-        scientific: 'Ground Curcuma longa', origin: 'Ambad / Jalna Facility Milling',
-        forms: 'Fine 60-80 Mesh, Ultra-Fine 100 Mesh',
-        feature: 'Consistent 2.5% to 5.0% Curcumin Grades',
-        packaging: '25kg Kraft paper bag with poly inner, Retail pouches',
-        desc: 'Cool-milled from pure turmeric fingers to prevent volatile oil degradation. Rich golden colour and zero artificial colouring agents.',
-        img: 'https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=800&q=80'
-      },
-      {
-        id: 'red-chilli-powder', category: 'powder', name: 'Red Chilli Powder',
-        scientific: 'Ground Capsicum annuum', origin: 'Ambad / Jalna Facility Milling',
-        forms: 'Mild Pungency (High ASTA), Medium Hot, Extra Hot (Teja)',
-        feature: 'Pure ground chilli, non-irradiated / steam-treated',
-        packaging: '25kg Kraft bags, Aluminium barrier foil pouches',
-        desc: 'Micro-pulverized chilli processed in controlled environments to preserve the bright crimson hue and exact heat benchmark requested by buyers.',
-        img: 'https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80'
-      },
-      {
-        id: 'cumin-powder', category: 'powder', name: 'Cumin Powder',
-        scientific: 'Ground Cuminum cyminum', origin: 'Ambad / Jalna Facility Milling',
-        forms: 'Aromatic Fine Ground (60-80 Mesh), Custom Roasted',
-        feature: 'Rich in cuminaldehyde essential oil',
-        packaging: '20kg, 25kg multi-wall bags with PE liner',
-        desc: 'Freshly ground from sortex cumin seeds under temperature-monitored grinding units to ensure high flavour release and shelf life.',
-        img: 'https://images.unsplash.com/photo-1509358271058-acd22cc93898?auto=format&fit=crop&w=800&q=80'
-      },
-      {
-        id: 'coriander-powder', category: 'powder', name: 'Coriander Powder',
-        scientific: 'Ground Coriandrum sativum', origin: 'Ambad / Jalna Facility Milling',
-        forms: 'Fine Mesh Powder (60-80 Mesh), Coarse Seasoning Grade',
-        feature: 'Aromatic citrus fragrance preserved',
-        packaging: '25kg Kraft paper sacks, Custom bulk cartons',
-        desc: 'Milled from prime coriander seeds under hygienic processing setups. Mild, sweet, floral aroma essential for curry powders and sauces.',
-        img: 'https://images.unsplash.com/photo-1508747703725-719777637510?auto=format&fit=crop&w=800&q=80'
-      },
-      {
-        id: 'garam-masala', category: 'blend', name: 'Garam Masala Blend',
-        scientific: 'Traditional Indian Spice Blend', origin: 'Proprietary Milling & Formulation',
-        forms: 'North Indian Formula, Mughlai Blend, Custom Ratio',
-        feature: 'Cinnamon, Clove, Cardamom, Cumin, Pepper & Nutmeg mix',
-        packaging: '10kg, 20kg cartons, Private label retail packs',
-        desc: 'A harmoniously roasted and pulverized bouquet of warming spices formulated specifically for international food processors and restaurants.',
-        img: 'https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&w=800&q=80'
-      },
-      {
-        id: 'custom-spice-blends', category: 'blend', name: 'Customized Spice Blends (OEM)',
-        scientific: 'Contract Manufacturing Formulation', origin: 'Ambad, Jalna Facility',
-        forms: 'Curry Powders, Tikka Masala, Chaat Masala, Buyer Specs',
-        feature: 'Tailored mesh size, salt content, heat units & colour profile',
-        packaging: 'Bulk liner bags, Stand-up zipper pouches, PET Jars',
-        desc: 'Full-service contract grinding, blending, and private label packaging tailored to institutional importers, seasoning makers, and supermarket brands.',
-        img: 'https://images.unsplash.com/photo-1608686207856-001b95cf60ca?auto=format&fit=crop&w=800&q=80'
-      }
+    const products = [
+      { id: 'turmeric-finger', name: 'Turmeric Finger', category: 'whole', form: 'Single / Double Polished', feature: 'High Curcumin Content', pack: '25/50 kg PP & Jute Bags', desc: 'Premium cured fingers selected for rich golden yellow hue and natural aroma.' },
+      { id: 'dry-red-chilli', name: 'Dry Red Chilli', category: 'whole', form: 'With Stem / Stemless', feature: 'Vibrant Red & Pungent', pack: '10/25 kg Cartons & Bags', desc: 'Handpicked Indian dry chillies suited for oleoresin, grinding, and direct spices.' },
+      { id: 'cumin-seeds', name: 'Cumin Seeds (Jeera)', category: 'whole', form: 'Machine Clean / Sortex 99%', feature: 'High Volatile Oil', pack: '25/50 kg Multi-layer Kraft', desc: 'Superior aromatic cumin seeds thoroughly sortex-cleaned for export standards.' },
+      { id: 'coriander-seeds', name: 'Coriander Seeds', category: 'whole', form: 'Eagle / Scooter / Badami', feature: 'Clean & Uniform Split', pack: '25 kg Bags', desc: 'Golden green aromatic coriander seeds sourced directly from premium growing belts.' },
+      { id: 'black-pepper', name: 'Black Pepper', category: 'whole', form: '500 - 550 g/l Garbled', feature: 'High Piperine Content', pack: '25/50 kg Jute Bags', desc: 'Bold, pungent sun-dried black peppercorns free from pinheads and foreign matter.' },
+      { id: 'green-cardamom', name: 'Green Cardamom', category: 'whole', form: '6mm, 7mm, 8mm+ Bold', feature: 'Rich Natural Essential Oil', pack: 'Vacuum Sealed Cartons', desc: 'Premium deep-green pods packed carefully to lock in original fresh aroma.' },
+      { id: 'black-cardamom', name: 'Black Cardamom', category: 'whole', form: 'Whole Pods Garbled', feature: 'Intense Smoky Aroma', pack: '25 kg PP Bags', desc: 'Sun-cured large cardamoms ideal for international spice master blends.' },
+      { id: 'dry-ginger', name: 'Dry Ginger (Sonth)', category: 'whole', form: 'Bleached / Unbleached', feature: 'Low Moisture & Clean', pack: '25/50 kg Bags', desc: 'Solid dried ginger roots with characteristic spicy warmth and low fiber.' },
+      { id: 'turmeric-powder', name: 'Turmeric Powder', category: 'powder', form: 'Fine Micro-Mesh', feature: '100% Pure, Zero Additives', pack: '25 kg Kraft Bags / Retail', desc: 'Ultra-pure bright yellow turmeric powder milled under hygienic conditions.' },
+      { id: 'red-chilli-powder', name: 'Red Chilli Powder', category: 'powder', form: 'Various Mesh & Heat Levels', feature: 'Natural Color & Hotness', pack: '20/25 kg Bags', desc: 'Carefully ground whole chillies with consistent SHU pungency and color values.' },
+      { id: 'cumin-powder', name: 'Cumin Powder', category: 'powder', form: 'Finely Milled Powder', feature: 'Retained Volatile Oils', pack: '25 kg Kraft Bags', desc: 'Freshly ground cumin delivering intense flavor profile for food manufacturing.' },
+      { id: 'coriander-powder', name: 'Coriander Powder', category: 'powder', form: 'Finely Ground', feature: 'Pleasant Citrusy Floral', pack: '25 kg Bags', desc: 'Processed from high-grade seeds ensuring rich aroma and smooth dispersion.' },
+      { id: 'garam-masala', name: 'Garam Masala', category: 'blends', form: 'Customized Roasting Profiles', feature: 'Traditional Balance', pack: 'Bulk Bags & Private Pouches', desc: 'Signature aromatic master blend crafted to meet institutional specifications.' },
+      { id: 'custom-blends', name: 'Customized OEM Blends', category: 'blends', form: 'Client Specifications', feature: 'Tailored Flavor & Pungency', pack: 'Private Label Formats', desc: 'Custom recipe formulation for food service chains and industrial seasoning brands.' }
     ];
 
-    // Get current products (either customized from LocalStorage or default)
-    function getProductsData() {
-      try {
-        const stored = localStorage.getItem('ksr_custom_products');
-        return stored ? JSON.parse(stored) : initialProductsData;
-      } catch (e) {
-        return initialProductsData;
-      }
-    }
-
-    let productsData = getProductsData();
-
-    // Local Storage CMS State Management
-    const CMS_DEFAULT = {
-      phone: "+91 9028310547",
-      phoneRaw: "919028310547",
-      email: "ceo@ksrspicesmfgin.in",
-      location: "Ambad, Jalna, Maharashtra, India",
-      experience: "7+ Years Export-Import Industry Experience",
-      headline: "Premium Indian Spices. Trusted Global Supply.",
-      subtext: "Manufacturing and exporting quality Indian spices with a commitment to consistency, reliable supply and international business partnerships.",
-      pin: "9028"
-    };
-
-    function getCmsData() {
-      try {
-        const stored = localStorage.getItem('ksr_cms_settings');
-        return stored ? Object.assign({}, CMS_DEFAULT, JSON.parse(stored)) : CMS_DEFAULT;
-      } catch (e) {
-        return CMS_DEFAULT;
-      }
-    }
-
-    function applyCmsToDom() {
-      const cms = getCmsData();
-      
-      // Top bar & Footer
-      document.getElementById('top-bar-phone').innerText = cms.phone;
-      document.getElementById('top-bar-phone-link').href = `https://wa.me/${cms.phoneRaw}`;
-      document.getElementById('top-bar-email').innerText = cms.email;
-      document.getElementById('top-bar-email-link').href = `mailto:${cms.email}`;
-      document.getElementById('top-bar-location').innerText = cms.location;
-      document.getElementById('top-bar-exp').innerText = cms.experience;
-      document.getElementById('footer-email').innerText = cms.email;
-      document.getElementById('footer-phone').innerText = cms.phone;
-
-      // Contact Page Credentials
-      const cAddr = document.getElementById('contact-info-address');
-      if (cAddr) cAddr.innerText = cms.location;
-      const cMail = document.getElementById('contact-info-email');
-      if (cMail) { cMail.innerText = cms.email; cMail.href = `mailto:${cms.email}`; }
-      const cPhone = document.getElementById('contact-info-phone');
-      if (cPhone) { cPhone.innerText = cms.phone; cPhone.href = `https://wa.me/${cms.phoneRaw}`; }
-
-      // Hero Elements
-      const heroHead = document.getElementById('hero-headline');
-      if (heroHead && cms.headline) {
-        heroHead.innerHTML = `${cms.headline.split('.')[0]}. <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-[#00A6E8] via-sky-300 to-[#D4AF37]">${cms.headline.split('.')[1] || ''}</span>`;
-      }
-      const heroSub = document.getElementById('hero-subtext');
-      if (heroSub) heroSub.innerText = cms.subtext;
-    }
-
-    // Page Navigation
-    function switchPage(pageId) {
-      document.querySelectorAll('.page-section').forEach(sec => sec.classList.remove('active'));
-      const target = document.getElementById(`section-${pageId}`);
-      if (target) {
-        target.classList.add('active');
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }
-
-      // Update Nav active style
-      document.querySelectorAll('.nav-link').forEach(btn => {
-        if (btn.getAttribute('data-page') === pageId) {
-          btn.classList.add('text-[#00A6E8]', 'font-bold', 'border-b-2', 'border-[#00A6E8]');
-        } else {
-          btn.classList.remove('text-[#00A6E8]', 'font-bold', 'border-b-2', 'border-[#00A6E8]');
-        }
-      });
-    }
-
-    function toggleMobileNav() {
-      const drawer = document.getElementById('mobile-nav-drawer');
-      const icon = document.getElementById('mobile-nav-icon');
-      if (drawer.classList.contains('hidden')) {
-        drawer.classList.remove('hidden');
-        icon.classList.replace('fa-bars', 'fa-xmark');
-      } else {
-        drawer.classList.add('hidden');
-        icon.classList.replace('fa-xmark', 'fa-bars');
-      }
-    }
-
-    // Dynamic Product Cards Renderer
-    function renderProductCard(p) {
-      return `
-        <div class="bg-white rounded-xl overflow-hidden border border-slate-200 hover:border-[#00A6E8] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
-          <div>
-            <div class="relative h-52 overflow-hidden bg-slate-100">
-              <img src="${p.img}" alt="${p.name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-              <span class="absolute top-3 left-3 bg-[#071B33]/90 text-[#D4AF37] text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded backdrop-blur-sm border border-white/20">
-                ${p.category.toUpperCase()}
-              </span>
-              <span class="absolute bottom-2 right-3 text-[10px] text-white/90 bg-black/60 px-2 py-0.5 rounded font-mono">
-                ${p.scientific}
-              </span>
-            </div>
-            <div class="p-6">
-              <div class="text-[11px] font-semibold text-[#00A6E8] uppercase tracking-wide">Origin: ${p.origin}</div>
-              <h3 class="text-lg font-bold text-[#071B33] mt-1 group-hover:text-[#00A6E8] transition-colors">${p.name}</h3>
-              <p class="text-slate-600 text-xs mt-2 line-clamp-2 leading-relaxed">${p.desc}</p>
-              <div class="mt-4 pt-3 border-t border-slate-100 space-y-1 text-xs">
-                <div class="text-slate-500 flex justify-between"><span>Forms:</span><span class="font-semibold text-slate-800 text-right truncate max-w-[170px]">${p.forms}</span></div>
-                <div class="text-slate-500 flex justify-between"><span>Packaging:</span><span class="font-medium text-slate-700 text-right truncate max-w-[170px]">${p.packaging}</span></div>
-              </div>
+    function renderProducts(items) {
+      const container = document.getElementById('products-container');
+      container.innerHTML = items.map(p => `
+        <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between">
+          <div class="p-5">
+            <span class="text-[10px] font-bold uppercase tracking-wider text-[#00A6E8] bg-sky-50 px-2 py-0.5 rounded">${p.category}</span>
+            <h4 class="font-display font-bold text-lg text-[#071B33] mt-2">${p.name}</h4>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">${p.desc}</p>
+            <div class="mt-4 pt-4 border-t border-slate-100 space-y-1.5 text-xs text-slate-500">
+              <div><strong class="text-slate-700">Form:</strong> ${p.form}</div>
+              <div><strong class="text-slate-700">Packaging:</strong> ${p.pack}</div>
             </div>
           </div>
-          <div class="p-6 pt-0 border-t border-slate-100 mt-2 flex items-center gap-2">
-            <button onclick="openRfqModal('${p.name}')" class="flex-1 bg-[#00A6E8] hover:bg-sky-600 text-white py-2 rounded-lg text-xs font-bold tracking-wide transition-colors flex items-center justify-center gap-1.5">
-              <i class="fa-solid fa-file-invoice"></i> Request Quote
-            </button>
-            <button onclick="openWhatsAppQuote('Hi Kunal, I need a bulk quote for ${p.name}. Please share technical specifications.')" class="bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-300 p-2 rounded-lg transition-colors" title="WhatsApp this spice">
-              <i class="fa-brands fa-whatsapp text-sm"></i>
-            </button>
+          <div class="p-4 bg-slate-50 border-t border-slate-100">
+            <a href="#contact" onclick="selectProduct('${p.name}')" class="block w-full py-2 text-center rounded-lg bg-[#071B33] hover:bg-[#D4AF37] hover:text-[#071B33] text-white font-bold text-xs uppercase tracking-wider transition">
+              Request Quote
+            </a>
           </div>
         </div>
-      `;
+      `).join('');
     }
 
-    function populateProducts() {
-      // Home featured 6
-      const homeCont = document.getElementById('home-featured-products');
-      if (homeCont) {
-        homeCont.innerHTML = productsData.slice(0, 6).map(renderProductCard).join('');
-      }
-      // Products catalog 14
-      const catalogCont = document.getElementById('products-catalog-grid');
-      if (catalogCont) {
-        catalogCont.innerHTML = productsData.map(renderProductCard).join('');
-      }
-    }
-
-    function filterProducts(cat) {
-      document.querySelectorAll('.prod-filter-btn').forEach(btn => {
-        if (btn.getAttribute('data-category') === cat) {
-          btn.className = "prod-filter-btn active px-5 py-2.5 rounded-full text-xs font-bold transition-all bg-[#071B33] text-white shadow-md";
-        } else {
-          btn.className = "prod-filter-btn px-5 py-2.5 rounded-full text-xs font-bold transition-all bg-white text-slate-700 border border-slate-200 hover:border-[#00A6E8]";
-        }
+    function filterCategory(cat) {
+      document.querySelectorAll('#tab-all, #tab-whole, #tab-powder, #tab-blends').forEach(b => {
+        b.className = 'px-4 py-2 text-xs font-bold rounded-lg bg-white text-slate-700 hover:bg-slate-100 transition';
       });
-      const catalogCont = document.getElementById('products-catalog-grid');
-      if (catalogCont) {
-        const filtered = cat === 'all' ? productsData : productsData.filter(p => p.category === cat);
-        catalogCont.innerHTML = filtered.map(renderProductCard).join('');
-      }
-    }
+      document.getElementById('tab-' + cat).className = 'px-4 py-2 text-xs font-bold rounded-lg bg-[#071B33] text-white transition';
 
-    // Populate Product Dropdown in Admin CMS
-    function initCmsProductDropdown() {
-      const select = document.getElementById('cms-product-select');
-      if (!select) return;
-      select.innerHTML = productsData.map((p, index) => 
-        `<option value="${p.id}">${index + 1}. ${p.name} (${p.category.toUpperCase()})</option>`
-      ).join('');
-      loadProductToCmsForm();
-    }
-
-    function loadProductToCmsForm() {
-      const select = document.getElementById('cms-product-select');
-      if (!select) return;
-      const selectedId = select.value;
-      const prod = productsData.find(p => p.id === selectedId);
-      if (!prod) return;
-
-      document.getElementById('cms-prod-name').value = prod.name || '';
-      document.getElementById('cms-prod-origin').value = prod.origin || '';
-      document.getElementById('cms-prod-forms').value = prod.forms || '';
-      document.getElementById('cms-prod-feature').value = prod.feature || '';
-      document.getElementById('cms-prod-packaging').value = prod.packaging || '';
-      document.getElementById('cms-prod-img').value = prod.img || '';
-      document.getElementById('cms-prod-desc').value = prod.desc || '';
-      document.getElementById('cms-prod-saved-msg').classList.add('hidden');
-    }
-
-    function saveCurrentProductEdit() {
-      const select = document.getElementById('cms-product-select');
-      if (!select) return;
-      const selectedId = select.value;
-      const index = productsData.findIndex(p => p.id === selectedId);
-      if (index === -1) return;
-
-      productsData[index] = {
-        ...productsData[index],
-        name: document.getElementById('cms-prod-name').value.trim() || productsData[index].name,
-        origin: document.getElementById('cms-prod-origin').value.trim() || productsData[index].origin,
-        forms: document.getElementById('cms-prod-forms').value.trim() || productsData[index].forms,
-        feature: document.getElementById('cms-prod-feature').value.trim() || productsData[index].feature,
-        packaging: document.getElementById('cms-prod-packaging').value.trim() || productsData[index].packaging,
-        img: document.getElementById('cms-prod-img').value.trim() || productsData[index].img,
-        desc: document.getElementById('cms-prod-desc').value.trim() || productsData[index].desc
-      };
-
-      // Save to local storage and update live DOM
-      localStorage.setItem('ksr_custom_products', JSON.stringify(productsData));
-      populateProducts();
-      
-      const msg = document.getElementById('cms-prod-saved-msg');
-      msg.classList.remove('hidden');
-      setTimeout(() => msg.classList.add('hidden'), 3000);
-    }
-
-    // RFQ & Sample Modals
-    function openRfqModal(productName = '') {
-      const modal = document.getElementById('rfq-modal');
-      const title = document.getElementById('modal-rfq-title');
-      const prodInput = document.getElementById('m-product');
-      if (productName) {
-        title.innerText = `Request Bulk Quote: ${productName}`;
-        prodInput.value = productName;
+      if (cat === 'all') {
+        renderProducts(products);
       } else {
-        title.innerText = "Request Official Export Quotation";
+        renderProducts(products.filter(p => p.category === cat));
       }
-      modal.classList.remove('hidden');
     }
 
-    function closeRfqModal() {
-      document.getElementById('rfq-modal').classList.add('hidden');
-      document.getElementById('modal-success-msg').classList.add('hidden');
+    function selectProduct(name) {
+      const select = document.getElementById('rfq-product');
+      if (select) {
+        for (let i = 0; i < select.options.length; i++) {
+          if (select.options[i].text.includes(name) || name.includes(select.options[i].value)) {
+            select.selectedIndex = i;
+            break;
+          }
+        }
+      }
     }
 
-    function handleModalRfqSubmit(e) {
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+
+    function handleFormSubmit(e) {
       e.preventDefault();
-      document.getElementById('modal-success-msg').classList.remove('hidden');
-      setTimeout(() => { closeRfqModal(); }, 2500);
+      alert('Thank you Mr. Kunal! Your bulk export inquiry has been logged. Our export desk will get back within 24 hours.');
     }
 
-    function openSampleModal() { document.getElementById('sample-modal').classList.remove('hidden'); }
-    function closeSampleModal() { document.getElementById('sample-modal').classList.add('hidden'); }
-
-    // WhatsApp Automation
-    function openWhatsAppQuote(customMsg = null) {
-      const cms = getCmsData();
-      const text = customMsg || `Hello Mr. Kunal Rathod (KSR International Trade Manufacturing),\n\nI would like to inquire about bulk spice export procurement from your Maharashtra facility. Please share product specifications and current FOB/CIF pricing.`;
-      window.open(`https://wa.me/${cms.phoneRaw}?text=${encodeURIComponent(text)}`, '_blank');
-    }
-
-    function sendFormToWhatsApp() {
-      const cms = getCmsData();
-      const name = document.getElementById('c-name').value || 'Buyer';
-      const comp = document.getElementById('c-company').value || '';
-      const country = document.getElementById('c-country').value || '';
-      const prod = document.getElementById('c-product').value || 'Indian Spices';
-      const qty = document.getElementById('c-qty').value || 'FCL Bulk';
-      const port = document.getElementById('c-port').value || 'Destination Port';
-      const incoterm = document.getElementById('c-incoterm').value || 'FOB';
-
-      const msg = `Hello Mr. Kunal Rathod,\n\nI am submitting an official RFQ via your website:\n• Buyer: ${name} (${comp})\n• Country: ${country}\n• Product: ${prod}\n• Quantity: ${qty}\n• Destination Port: ${port}\n• Incoterm: ${incoterm}\n\nPlease share your official quotation.`;
-      window.open(`https://wa.me/${cms.phoneRaw}?text=${encodeURIComponent(msg)}`, '_blank');
-    }
-
-    function sendModalToWhatsApp() {
-      const cms = getCmsData();
-      const name = document.getElementById('m-name').value || 'Overseas Buyer';
-      const country = document.getElementById('m-country').value || '';
-      const prod = document.getElementById('m-product').value || 'Spices';
-      const qty = document.getElementById('m-qty').value || 'Bulk';
-      const msg = `Hello Mr. Kunal Rathod,\n\nQuotation Request for ${prod}:\n• Buyer: ${name} (${country})\n• Required Qty: ${qty}\n\nPlease share pricing and availability.`;
-      window.open(`https://wa.me/${cms.phoneRaw}?text=${encodeURIComponent(msg)}`, '_blank');
-    }
-
-    function handleContactFormSubmit(e) {
-      e.preventDefault();
-      document.getElementById('contact-success-msg').classList.remove('hidden');
-      document.getElementById('contact-rfq-form').reset();
-    }
-
-    // ADMIN CONTROL PANEL (CMS) LOGIC
-    function openAdminModal() {
-      document.getElementById('admin-modal').classList.remove('hidden');
-      document.getElementById('admin-pin-input').value = '';
-      document.getElementById('admin-pin-error').classList.add('hidden');
-      document.getElementById('admin-login-view').classList.remove('hidden');
-      document.getElementById('admin-dashboard-view').classList.add('hidden');
-    }
-
-    function closeAdminModal() {
-      document.getElementById('admin-modal').classList.add('hidden');
-    }
-
-    function authenticateAdmin() {
-      const pinEntered = document.getElementById('admin-pin-input').value;
-      const cms = getCmsData();
-      if (pinEntered === cms.pin) {
-        document.getElementById('admin-login-view').classList.add('hidden');
-        document.getElementById('admin-dashboard-view').classList.remove('hidden');
-        // Populate inputs with current values
-        document.getElementById('cms-phone').value = cms.phone;
-        document.getElementById('cms-email').value = cms.email;
-        document.getElementById('cms-location').value = cms.location;
-        document.getElementById('cms-exp').value = cms.experience;
-        document.getElementById('cms-headline').value = cms.headline;
-        document.getElementById('cms-subtext').value = cms.subtext;
-        document.getElementById('cms-new-pin').value = '';
-        
-        // Populate Product Editor
-        initCmsProductDropdown();
-      } else {
-        document.getElementById('admin-pin-error').classList.remove('hidden');
-      }
-    }
-
-    function logoutAdmin() {
-      document.getElementById('admin-dashboard-view').classList.add('hidden');
-      document.getElementById('admin-login-view').classList.remove('hidden');
-      document.getElementById('admin-pin-input').value = '';
-    }
-
-    function saveCmsSettings(e) {
-      e.preventDefault();
-      const current = getCmsData();
-      const phoneVal = document.getElementById('cms-phone').value.trim();
-      const newPinVal = document.getElementById('cms-new-pin').value.trim();
-
-      const updated = {
-        phone: phoneVal || current.phone,
-        phoneRaw: phoneVal.replace(/[^0-9]/g, '') || current.phoneRaw,
-        email: document.getElementById('cms-email').value.trim() || current.email,
-        location: document.getElementById('cms-location').value.trim() || current.location,
-        experience: document.getElementById('cms-exp').value.trim() || current.experience,
-        headline: document.getElementById('cms-headline').value.trim() || current.headline,
-        subtext: document.getElementById('cms-subtext').value.trim() || current.subtext,
-        pin: newPinVal ? newPinVal : current.pin
-      };
-
-      localStorage.setItem('ksr_cms_settings', JSON.stringify(updated));
-      applyCmsToDom();
-      closeAdminModal();
-    }
-
-    function resetCmsDefaults() {
-      localStorage.removeItem('ksr_cms_settings');
-      localStorage.removeItem('ksr_custom_products');
-      productsData = initialProductsData.slice();
-      applyCmsToDom();
-      populateProducts();
-      closeAdminModal();
-    }
-
-    // Keyboard shortcut to open admin: Press 'Ctrl + Shift + K'
-    window.addEventListener('keydown', (e) => {
-      if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'k') {
-        openAdminModal();
-      }
-    });
-
-    // Secret URL hash trigger: Opening website with #ksradmin (e.g. ksrspicesmfgin.in/#ksradmin)
-    function checkSecretAdminHash() {
-      if (window.location.hash === '#ksradmin') {
-        openAdminModal();
-        history.replaceState(null, null, ' ');
-      }
-    }
-    window.addEventListener('hashchange', checkSecretAdminHash);
-
-    // Boot App
-    window.onload = function () {
-      applyCmsToDom();
-      populateProducts();
-      switchPage('home');
-      checkSecretAdminHash();
-    };
+    // Initial render
+    renderProducts(products);
   </script>
 </body>
 </html>
